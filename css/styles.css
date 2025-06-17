@@ -1,0 +1,630 @@
+/*ESTILOS DE LA PÁGINA DE INICIO Y QUE SE REPETIRÁN EN LAS DIFERENTES PÁGINAS DE LA WEB*/
+       /*CUERPO*/
+        body{margin: 0;
+             padding: 0;
+             font-size: 16px;
+             background-color: #56001D;            
+             font-family: "Montserrat", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 400;
+             font-style: normal;
+             }
+         
+
+       /*CABECERA*/
+       header{width: 100%;
+              min-height: 210px;
+              display: flex;
+              background-color: #56001D;             
+              }
+       .jun img{width: 100%;
+                min-height: 210px;
+                margin: 10px auto 5px;
+                background-size: cover;
+               }
+       
+       /*Parte de la cabecera del logo
+       .head1, .head3{width: 20%;}
+       .logo{width: 130px;
+             height: 130px;
+             margin: 30px;
+             }
+       .logo:hover{transform: scale(1.2);} /*Se amplia cuando pasamos raton encima*/
+
+       /*Parte de la cabecera del nombre
+       .head2{width: 60%;
+              text-align: center;
+              background-image:inherit;}
+        header a{text-decoration: none;
+                color: black;}
+       .header2 h1{font-size: 100px;
+                   margin: 0 auto;
+                   padding: 0;
+                   color: black;
+                   }
+       header h1:hover{transform:scale(1.1) translate(15px);} /*Se amplia y desplaza cuando pasamos el ratón encima
+       .header2 h3{margin: 0 auto 50px;
+                   padding:0;
+                   font-size: 25px;
+                   color: black;
+                   }  
+       .header3{width: 20%;} */
+
+       /*Adaptamos la cabecera a las diferentes  medidas de pantallas*/         
+       @media (max-width: 600px){header{display: block;}
+                                    .logo{width: 50px;
+                                         height: 50px;
+                                         margin: 5px;}
+                                    .header2{margin: auto;}
+                                    .header2 h1{font-size: 12px;
+                                                margin: auto ;}
+                                    .header2 h3{font-size: 12px;}                                                                   
+                                   }
+       @media (max-width: 900px){header{display: block;}
+                                    .logo{width: 80px;
+                                         height: 80px;
+                                         margin: 10px;}
+                                    .header2{margin: auto;}
+                                    .header2 h1{font-size: 16px;
+                                                margin: auto;}
+                                     .header2 h3{font-size: 16px;}                                                                   
+                                   }
+       @media (max-width: 1170px){header{display: block;}
+                                    .logo{width: 100px;
+                                         height: 100px;
+                                         margin: 15px;}
+                                    .header2{margin: auto;}
+                                    .header2 h1{font-size: 18px;
+                                                margin: auto;}
+                                     .header2 h3{font-size: 18px;}                                                                   
+                                   }
+       
+       /*MAIN*/
+       main{width: 100%;
+            margin: 5px auto;
+            box-sizing: content-box; /*Para que no sobresalga el contenido cuando se encoja el contenedor*/
+           } 
+       nav{width: 98%;
+           display: inline-flex;
+           justify-content:space-between;
+           margin: 5px auto;
+           text-align: center;
+           }
+       nav a{margin: 10px auto;
+             width: 120px;
+             padding: 5px 8px;
+             text-decoration: none;
+             background-color: #faf5d7;
+             color: #56001D;
+             border-radius: 15px;
+             font-weight: bold;
+             }              
+       ul li{list-style-type: none;}
+       nav a:hover{background-color: #cccbcb; /*Cambio de apariencia cuando pasamos ratón encima*/
+                   color: #3e3d3d;}
+       
+       /*Adaptamos el navegador del main a las diferentes  medidas de pantallas*/ 
+
+        @media (max-width: 600px){nav{display: inline-flex;
+                                      justify-content:space-between;
+                                      margin: 10px auto;
+                                      text-align: center;
+                                      font-size: small;
+                                      }
+                                   nav a{margin: 10px auto;
+                                          width: 50px;
+                                          padding: 5px;
+                                          text-decoration: none;
+                                          background-color: #b05959;
+                                          color: whitesmoke;
+                                          border-radius: 5px;
+                                          font-weight: bold;
+                                         } 
+                                    .presentacion h1{font-size: 18px;}     
+                                    body{font-size: 14px;}                                                                                 
+                                   }
+       @media (max-width: 900px){nav{display: inline-flex;
+                                      justify-content:space-between;
+                                      margin: 10px auto;
+                                      text-align: center;
+                                      font-size:medium;
+                                      }
+                                   nav a{margin: 10px auto;
+                                          width: 100px;
+                                          padding: 10px;
+                                          text-decoration: none;
+                                          background-color: #b05959;
+                                          color: whitesmoke;
+                                          border-radius: 10px;
+                                          font-weight: bold;
+                                         } 
+                                   .presentacion h1{font-size: 24px;}     
+                                   body{font-size: 16px;}     
+                                   }
+       
+       /*PIE DE PÁGINA*/    
+       footer{width: 100%;
+              text-align: center;
+              color: #faf5d7;}
+       .cont{width: 100%;
+             margin: 0;
+             padding:0;
+             display: inline-flex;
+             background-color:  #56001D;
+             text-align: center;
+             }
+       .peu{width: 80%;
+            column-count:3;
+            column-width: 30%;
+            column-gap: 10px;
+            display: flex;
+            margin: 0 auto;
+            padding: 5px;
+            }
+       .peu h3{color: #faf5d7;
+               padding: 5px;
+               margin: 0;
+               }
+       .contacte, .sitio, aside{display: block;
+                                width: 40%;
+                                margin: 0;
+                                padding: 3px;
+                                }
+       .peu ul{margin: 0;
+                padding: 5px;}                         
+       .peu span{font-weight: bold;
+                  margin: auto;}
+       .contacte{color: #faf5d7;}
+       .social {display: inline-block; /*para poner iconos redes sociales en la diferentes línea*/
+                padding: 5px;}
+       .peu a{text-decoration: none;
+               color: #faf5d7;}
+       .peu a:hover{text-decoration: none;
+                    color:#97f5f5;}
+       .logoCat{width: 150px;
+                height: 150px;
+                margin: 0 0 0 50px;
+                padding: 0;
+                background-size: cover;
+                }
+       .drets{width: 100%;
+              height: 150px;
+              margin: auto;
+              text-align: center;
+              display: flex;
+             }
+       .dret1{width: 60%;
+              height: 150px;
+              text-align: right;}
+       .logoCat{width: 150px;
+                height: 150px;
+                margin: 0;
+                padding: 0;
+                background-size: cover;
+                }
+       .dret2{width: 100%;
+              height: 150px;
+              text-align: left;
+              align-content: center;
+              }
+       .dret2 h4{margin: auto;
+                 font-size: 18px;
+                }
+       /*Adaptamos el pie a las diferentes  medidas de pantallas*/ 
+       @media (max-width: 600px){footer h4{margin: 0;
+                                          padding-top: 0;
+                                          padding-bottom: 20px;
+                                          color:#b05959;
+                                          font-size: 14px;}
+                                 .pie{width: 90%;
+                                      column-gap: 5px;
+                                      font-size: 14px;
+                                      padding: 5px;}
+                                 }
+                                   
+       
+       /*ESPECÍFICO PÁGINA DE INICIO*/
+       .contGran{width: 90%;
+                 margin: 5px auto;
+                 padding: 5px 10px;
+                 border: 2px solid black;
+                 border-radius: 20px;
+                 background-color: white;
+                 text-align: justify;
+                 }
+       .contNovetats{width: 95%;
+                     margin: 5px auto;
+                     padding: 5px 10px;
+                     border: 2px solid black;
+                     border-radius: 20px;
+                     background-color: white;
+                     text-align: justify;
+                     }
+       .contPetit{width: 95%;
+                  min-height: 130px;
+                  margin: auto;
+                  padding: 5px 10px;
+                  display: inline-flex;
+                  justify-content:space-between;
+                  border: 2px solid black;
+                  border-radius: 20px;
+                  }
+       .caixa{width:25%;
+              min-height: 200px;
+              margin: 10px;
+              padding: 0 10px 5px;
+              border: 2px solid black;
+              border-radius: 15px;
+              }
+       .caixa h3{padding:10px 10px 0px;}       
+       .caixa p{padding: 0 10px 5px;}
+
+
+      /*ESPECÍFICO PÁGINA DE CLÍNICA*/
+      .clinica, .cliente, .politicas, 
+      .contactar, .tienda {margin: 5px auto;
+                           padding: 10px 50px;
+                            border: 2px solid #b05959;
+                            border-radius: 20px;
+                            background-color: #dff6df;
+                            text-align: justify;
+                           } 
+      .clinica h1, h2{text-align: center;
+                       margin-top: 20px;
+                       padding: 0;
+                       color: #7a3b3b
+                     }
+      .clinica h2{font-size: 30px;} 
+      .clinica h3{text-align:justify;
+                    color: black;}
+      .clinica form{width: 60%;
+                    min-height: 60px;
+                    margin: auto;
+                    padding: 20px;
+                    display: block;
+                    justify-content: space-between;
+                    border: 2px solid green;
+                    border-radius: 15px;
+                    background-color: #f9f4ea;
+                    }
+      .clinica label{margin-left: 20px;
+                     font-weight: 400;}
+      .clinica input{width: 34%;
+                     min-height: 30px;
+                     margin:10px auto;
+                     justify-content: space-between;
+                     border: 1px solid grey;
+                     border-radius: 10px;
+                     }
+      .clinica [type="submit"]{margin: 20px auto 10px;
+                      width: 150px;
+                      padding: 10px;
+                      display: block;
+                      border-radius: 25px;
+                      background-color: green;
+                      color:antiquewhite;
+                      font-size: large;
+                      font-weight: bold;
+                      box-shadow: 5px 5px 10px #b05959;
+                      }
+      .clinica [type="submit"]:hover{background-color: #b8f572;
+                                      color: black;}
+      .info{width: 90%;
+            margin: 0 auto 20px;
+            padding:20px 50px;
+            line-height: 1.5;
+            }
+      .info h3{margin: 10px 0 0;
+               padding: 0;}
+      .trans{width: 30px;
+             height: 30px;
+             margin: 0 10px 0 0;
+             background-color: white;
+             border: 1px solid black;
+             border-radius: 5px;
+             }
+
+       /*ESPECÍFICO PÁGINA PLANES SALUD*/
+       .salud{margin: 5px auto;
+              padding: 10px 50px;
+              border: 2px solid #b05959;
+              border-radius: 20px;
+              background-color: #dff6df;
+              } 
+
+      /*PARA LA TABLA*/  
+      .tabla{margin: 20px auto 50px;
+            padding: 10px;
+            justify-content: center;
+             }
+      caption{font-weight: 700;
+              font-size: 40px;
+              color:#7a3b3b;
+              padding-bottom: 20px;
+              }
+      table{border-collapse: collapse;
+            border: 2px solid green;
+            margin: auto;
+            } 
+      th, td{border-collapse: collapse;
+             border: 2px solid green;}
+      th, td{min-width: 100px;
+             min-height: 50px;
+             padding: 20px;
+            } 
+      .cabe{background-color: #dcd8d8;}
+      .t1{background-color: #cd7f32;}
+      .t2{background-color: #a9b2b8;} 
+      .t3{background-color: #8a9597;} 
+      .t4{background-color: #EFB810;}
+       td{background-color: whitesmoke;
+          font-weight: 400;} 
+
+      /*PARA ARTICLES PLANES*/
+      .planes article{max-width: 35%;
+                      min-height: 370px;
+                      margin: 30px auto;
+                      padding: 20px 20px 10px 5px;
+                      border: 2px solid green;
+                      border-radius: 25px;
+                      background-color: #f9f4ea;
+                     } 
+      .planes article h2, h3{margin:0 0 2px 0;
+                             padding:0;
+                             text-align: center;      
+                             color:#7a3b3b; 
+                            } 
+      .planes li{list-style-type: circle;}
+      .servei{list-style-type: none !important;
+              font-weight: bold;}  
+
+      /*ESPECÍFICO PÁGINA DE NUEVO CLIENTE*/
+      /*<div class="cliente"> es el mismo formato que <div class="clinica">*/
+      .cliente h1{text-align: center;
+                  margin-top: 20px;
+                  padding: 0;
+                  color: #7a3b3b;
+                 }
+      .cliente form{max-width: 900px;
+                    min-height: 400px;
+                    margin: 0 auto 30px;
+                    padding: 20px;
+                    display: block;
+                    justify-content: space-between;
+                    border: 2px solid green;
+                    border-radius: 25px;
+                    background-color: #f9f4ea;
+                   }
+      .cliente fieldset{border: 1px solid #7a3b3b;
+                        border-radius: 15px;
+                        margin-bottom: 10px;
+                        padding: 15px;
+                       } 
+      .cliente legend{font-weight: bold;
+                      color:#7a3b3b;
+                      padding: 5px 10px;
+                      }             
+      .cliente label{width: 100px;
+                     display:inline-block;
+                     margin-left: 20px;
+                     font-weight: 400;
+                     }
+      .cliente input{width: 260px;
+                     min-height: 20px;
+                     margin:10px 5px;
+                     padding: 5px;
+                     display: inline-block;
+                     border: 1px solid grey;
+                     border-radius: 10px;
+                     font-size: 16px;
+                     }
+      .mascotas select{width: 200px;
+                       height: 30px;
+                       text-align: center;
+                       }
+      button{margin: 10px 20px;
+              width: 150px;
+              padding: 10px;
+              display:inline;
+              justify-content:space-between;
+              text-align: center;
+              border-radius: 25px;
+              font-size: large;
+              font-weight: bold;
+              }
+      .boto1{background-color: #dcdc04;
+             border: 1px solid #dcdc04;
+             color:indigo;
+             box-shadow: 5px 5px 10px #b05959;
+             }
+      .boto1:hover{background-color: #f6f697;
+                   border: 1px solid #f6f697;
+                   color: #cd5ccd;
+                  }
+      .boto2{background-color: green;
+             border: 1px solid green;
+             color:antiquewhite;
+             box-shadow: 5px 5px 10px #b05959;
+             }
+      .boto2:hover{background-color: #b8f572;
+                   border: 1px solid #b8f572;
+                   color: black;
+              }                         
+       [type="radio"]{margin: 10px 0 20px 0 !important;
+                      width: 20px !important;
+                     }
+       .amoverif{margin-left: 150px !important;}             
+       [type="checkbox"]{margin: 10px 0 20px 10px !important;
+                         width: 20px !important;
+                        }
+       .sinto{margin-bottom: 10px;}                 
+       #sinto{width: 95%;
+              min-height: 100px;
+              margin-left: 20px;
+              font-size: 14px;
+              resize: none;
+             }          
+       .centrar{text-align: center;
+                margin:auto;}
+
+       /*ESPECÍFICO PÁGINA LISTADO*/
+       /*<div id="listado"> es el mismo formato que <div class="clinica">*/
+       #listCli{margin: auto;
+                padding: 10px 50px;
+                border: 2px solid #b05959;
+                border-radius: 20px;
+                background-color: #dff6df;
+                } 
+       #listado{display: flex;
+                flex-wrap: wrap;}
+       #fichaCli{width: 350px;
+                 min-height: 450px;
+                 margin: 20px;
+                 padding: 20px 5px 5px;
+                 border: 2px solid green;
+                 border-radius: 15px;
+                 text-align: center;
+                 background-color: #f9f4ea;
+                 color:#7a3b3b;
+                 word-wrap: break-word;
+                 overflow-wrap: break-word;
+                 }
+       #fichaCli p{margin: 0;
+                   padding: 0;}
+       #fichaCli hr{width: 250px;
+                    border-color: #7a3b3b;}
+       #borrarCli{border: 1px solid red;
+                   background-color: red;
+                   box-shadow: 5px 5px 10px #b05959;
+                  }
+       #borrarCli:hover{background-color: #f78383;
+                        border-color: #f78383;}
+
+       /*ESPECÍFICO PÁGINA DE TIENDA*/
+       /*<div class="tienda"> es el mismo formato que <div class="clinica">*/
+       .catalogo{width: 87%;
+                 margin: 5px auto;
+                 padding: 30px;
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 15px;
+                 align-content:space-between;
+                 border: 2px solid green;
+                 border-radius: 20px;
+                 background-color: #f9f4ea;
+                 text-align: justify;
+                 }
+       .tienda p{padding: 0 50px;}
+       .catalogo article {width: 300px;
+                          margin: 10px;
+                          padding: 10px;
+                          align-items: flex-start;
+                          border: 1px solid #b05959;
+                          border-radius: 15px;
+                          background-color: #c6e6c6;
+                          text-align: center;
+                          }
+       .catalogo article:hover{background-color: green;
+                               color: white;}
+       .catalogo img{width:260px;
+                     height:300px;
+                     margin: 10px 0;
+                     background-color: white;
+                     border: 1px solid black;
+                     border-radius: 10px;
+                     }
+       .catalogo img:hover{transform:scale(1.1);}              
+       .catalogo article p{padding: 0 10px;
+                           text-align: justify;}
+       
+       /*ESPECÍFICO PÁGINA POLÍTICAS*/
+       /*<div class="politicas"> es el mismo formato que <div class="clinica">*/
+       .politicas h1, h2{text-align: center;
+                          color:#7a3b3b;
+                          padding: 5px;
+                          margin: 0;}
+      .politicas h1{margin-top: 20px;}
+      .politicas h2{margin-bottom: 20px;}                    
+      .legal{width: 80%;
+             min-height: 700px;
+             margin:0 auto 50px;
+             padding: 20px 50px;
+             background-color:#f7dede;
+             color:black;
+             border: 2px solid #0e310e;
+             border-radius: 20px;
+             }
+      .legal p{padding: 0 25px;}
+
+      /*ESPECÍFICO PÁGINA CONTACTO*/
+       /*<div class="politicas"> es el mismo formato que <div class="clinica">*/
+       .contactar h1{text-align: center;
+                     margin-top: 20px;
+                     padding: 0;
+                     color: #7a3b3b
+                    }
+       .cajaform{width: 50%;
+                 min-height: 370px;
+                 margin: 0 auto;
+                 display: block;
+                 background-color: #f9f4ea;
+                 border: 2px solid green;
+                 border-radius: 15px;
+                 }
+       #info{min-height: 300px;
+              margin: 20px auto;
+              text-align: center;
+              font-size: 16px;
+              }
+       #info label{margin-right:15px;}
+       #info input{width: 300px;
+                        height: 15px;
+                        margin: 5px auto;
+                        padding: 5px;
+                        border: 1px solid grey;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        }
+       .soli{margin-top: 20px;}
+       #motivo{width: 70%;
+              min-height: 70px;
+              margin: 10px 0 0 20px;
+              font-size: 14px;
+              resize: none;
+             }          
+       .condi{font-size: 14px;
+              margin-right: 0 !important;}                 
+       .polis{margin-left: 30px;
+              font-size: 14px;}                          
+       #info [type="submit"]{margin: 10px auto 10px;
+                            width: 150px;
+                            height: 50px;
+                            padding: 10px;
+                            border-radius: 25px;
+                            background-color: green;
+                            color:antiquewhite;
+                            font-size: large;
+                            font-weight: bold;
+                            box-shadow: 5px 5px 10px #b05959;
+                            }
+       .cajadir{width: 400px;
+                height: 150px;
+                margin: 0 auto;
+                padding: 5px;
+                background-color: #d2d0d0;
+                border: 2px solid #565555;
+                border-radius: 20px;
+               }
+       .contactar img{width: 60%;
+                      max-height: 300px;
+                      display: flex;
+                      margin: 10px auto;
+                      border-radius: 15px;
+                      resize:both;
+                     }
+     
+      
+      
+
+       
+
