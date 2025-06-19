@@ -1,64 +1,34 @@
 /*ESTILOS DE LA PÁGINA DE INICIO Y QUE SE REPETIRÁN EN LAS DIFERENTES PÁGINAS DE LA WEB*/
+       
        /*CUERPO*/
         body{margin: 0;
              padding: 0;
-             font-size: 16px;
+             font-size: 18px;
              background-color: #56001D;            
              font-family: "Montserrat", sans-serif;
              font-optical-sizing: auto;
-             font-weight: 400;
+             font-weight: 600;
              font-style: normal;
              }
-         
-
+        
        /*CABECERA*/
        header{width: 100%;
-              min-height: 210px;
+              min-height: 200px;
               display: flex;
               background-color: #56001D;             
               }
        .jun img{width: 100%;
-                min-height: 210px;
-                margin: 10px auto 5px;
+                min-height: 180px;
+                margin: 5px auto 0;
                 background-size: cover;
                }
        
-       /*Parte de la cabecera del logo
-       .head1, .head3{width: 20%;}
-       .logo{width: 130px;
-             height: 130px;
-             margin: 30px;
-             }
-       .logo:hover{transform: scale(1.2);} /*Se amplia cuando pasamos raton encima*/
-
-       /*Parte de la cabecera del nombre
-       .head2{width: 60%;
-              text-align: center;
-              background-image:inherit;}
-        header a{text-decoration: none;
-                color: black;}
-       .header2 h1{font-size: 100px;
-                   margin: 0 auto;
-                   padding: 0;
-                   color: black;
-                   }
-       header h1:hover{transform:scale(1.1) translate(15px);} /*Se amplia y desplaza cuando pasamos el ratón encima
-       .header2 h3{margin: 0 auto 50px;
-                   padding:0;
-                   font-size: 25px;
-                   color: black;
-                   }  
-       .header3{width: 20%;} */
-
        /*Adaptamos la cabecera a las diferentes  medidas de pantallas*/         
        @media (max-width: 600px){header{display: block;}
                                     .logo{width: 50px;
                                          height: 50px;
                                          margin: 5px;}
-                                    .header2{margin: auto;}
-                                    .header2 h1{font-size: 12px;
-                                                margin: auto ;}
-                                    .header2 h3{font-size: 12px;}                                                                   
+                                                                                                       
                                    }
        @media (max-width: 900px){header{display: block;}
                                     .logo{width: 80px;
@@ -84,24 +54,32 @@
             margin: 5px auto;
             box-sizing: content-box; /*Para que no sobresalga el contenido cuando se encoja el contenedor*/
            } 
-       nav{width: 98%;
-           display: inline-flex;
-           justify-content:space-between;
-           margin: 5px auto;
-           text-align: center;
-           }
-       nav a{margin: 10px auto;
-             width: 120px;
+       nav{width: 100%;
+             display: inline-flex;
+             flex-wrap: wrap;
+             margin: auto;
+             justify-content: center;
+             text-align: center;
+             }
+       nav a{margin: 5px 18px;
+             width: 100px;
              padding: 5px 8px;
              text-decoration: none;
              background-color: #faf5d7;
              color: #56001D;
              border-radius: 15px;
              font-weight: bold;
-             }              
-       ul li{list-style-type: none;}
-       nav a:hover{background-color: #cccbcb; /*Cambio de apariencia cuando pasamos ratón encima*/
-                   color: #3e3d3d;}
+             }
+       nav a:hover{background-color: #97f5f5; /*Cambio de apariencia cuando pasamos ratón encima*/
+                   color: black;}      
+       .idiomas{margin: 5px 20px;
+                width: 120px;
+                padding: 5px 8px;
+                background-color: #faf5d7;
+                border-radius: 15px;
+                }              
+       .idiomas:hover{background-color: #97f5f5; /*Cambio de apariencia cuando pasamos ratón encima*/
+                      color: black;}
        
        /*Adaptamos el navegador del main a las diferentes  medidas de pantallas*/ 
 
@@ -171,22 +149,18 @@
                                 padding: 3px;
                                 }
        .peu ul{margin: 0;
-                padding: 5px;}                         
+               padding: 5px;
+               list-style: none;}                         
        .peu span{font-weight: bold;
                   margin: auto;}
        .contacte{color: #faf5d7;}
-       .social {display: inline-block; /*para poner iconos redes sociales en la diferentes línea*/
+       .social {display: inline-block; /*para poner iconos redes sociales en la diferentes líneas*/
                 padding: 5px;}
        .peu a{text-decoration: none;
                color: #faf5d7;}
        .peu a:hover{text-decoration: none;
                     color:#97f5f5;}
-       .logoCat{width: 150px;
-                height: 150px;
-                margin: 0 0 0 50px;
-                padding: 0;
-                background-size: cover;
-                }
+       
        .drets{width: 100%;
               height: 150px;
               margin: auto;
@@ -201,20 +175,28 @@
                 margin: 0;
                 padding: 0;
                 background-size: cover;
-                }
+               }
+       .logoCat:hover{transition: rotacion 0.1s; }
+       @keyframes rotacion{
+                            0%{transform: rotateY(0deg)}
+                            25%{transform: rotateY(45deg)}
+                            50%{transform: rotateY(90deg)}
+                            50%{transform: rotateY(135deg)}
+                            100%{transform: rotateY(180deg)}
+                            }
        .dret2{width: 100%;
               height: 150px;
               text-align: left;
               align-content: center;
               }
        .dret2 h4{margin: auto;
-                 font-size: 18px;
-                }
+                 font-size: 18px;}
+
        /*Adaptamos el pie a las diferentes  medidas de pantallas*/ 
        @media (max-width: 600px){footer h4{margin: 0;
                                           padding-top: 0;
                                           padding-bottom: 20px;
-                                          color:#b05959;
+                                          color:#faf5d7;;
                                           font-size: 14px;}
                                  .pie{width: 90%;
                                       column-gap: 5px;
@@ -222,34 +204,49 @@
                                       padding: 5px;}
                                  }
                                    
-       
        /*ESPECÍFICO PÁGINA DE INICIO*/
-       .contGran{width: 90%;
+       .contGran{width: 96%;
                  margin: 5px auto;
                  padding: 5px 10px;
-                 border: 2px solid black;
-                 border-radius: 20px;
-                 background-color: white;
+                 border-radius: 30px;
+                 background: repeating-linear-gradient(to right, #9c818a, #faf5d7, #9e7683);
+                 color: #56001D;
                  text-align: justify;
                  }
-       .contNovetats{width: 95%;
-                     margin: 5px auto;
-                     padding: 5px 10px;
-                     border: 2px solid black;
-                     border-radius: 20px;
-                     background-color: white;
-                     text-align: justify;
-                     }
-       .contPetit{width: 95%;
-                  min-height: 130px;
-                  margin: auto;
-                  padding: 5px 10px;
-                  display: inline-flex;
-                  justify-content:space-between;
-                  border: 2px solid black;
-                  border-radius: 20px;
-                  }
-       .caixa{width:25%;
+       .contGran h2{margin: 0 0 10px;}
+       .contNovetats, .contPetit{width: 98%;
+                                 margin: 5px auto;
+                                 padding: 5px 10px;
+                                 display: inline-flex;
+                                 flex-wrap: wrap;
+                                 justify-content:space-between;
+                                 border: 2px solid black;
+                                 border-radius: 20px;
+                                 text-align: justify;
+                                 }
+       .nuevo{width: 65%;
+              min-height: 200px;
+              margin: 10px auto;
+              padding: 20px;
+              border: 2px solid black;
+              border-radius: 20px;
+              text-align: justify;
+              }
+       .news{width: 26%;
+             min-height: 200px;
+             margin: 10px auto;
+             padding: 20px;
+             border: 2px solid black;
+             border-radius: 20px;
+             text-align: justify;
+             }
+       .news img{width: 400px;
+                  height: 250px;
+                  margin: 10px 5px 0;
+                  text-align: center;
+                  border-radius: 10px;
+                  background-size:contain;}
+       .caixa{width:30%;
               min-height: 200px;
               margin: 10px;
               padding: 0 10px 5px;
@@ -258,125 +255,110 @@
               }
        .caixa h3{padding:10px 10px 0px;}       
        .caixa p{padding: 0 10px 5px;}
-
-
-      /*ESPECÍFICO PÁGINA DE CLÍNICA*/
-      .clinica, .cliente, .politicas, 
-      .contactar, .tienda {margin: 5px auto;
-                           padding: 10px 50px;
-                            border: 2px solid #b05959;
-                            border-radius: 20px;
-                            background-color: #dff6df;
-                            text-align: justify;
-                           } 
-      .clinica h1, h2{text-align: center;
-                       margin-top: 20px;
-                       padding: 0;
-                       color: #7a3b3b
-                     }
-      .clinica h2{font-size: 30px;} 
-      .clinica h3{text-align:justify;
-                    color: black;}
-      .clinica form{width: 60%;
-                    min-height: 60px;
-                    margin: auto;
-                    padding: 20px;
-                    display: block;
-                    justify-content: space-between;
-                    border: 2px solid green;
-                    border-radius: 15px;
-                    background-color: #f9f4ea;
-                    }
-      .clinica label{margin-left: 20px;
-                     font-weight: 400;}
-      .clinica input{width: 34%;
-                     min-height: 30px;
-                     margin:10px auto;
-                     justify-content: space-between;
-                     border: 1px solid grey;
-                     border-radius: 10px;
-                     }
-      .clinica [type="submit"]{margin: 20px auto 10px;
-                      width: 150px;
-                      padding: 10px;
-                      display: block;
-                      border-radius: 25px;
-                      background-color: green;
-                      color:antiquewhite;
-                      font-size: large;
-                      font-weight: bold;
-                      box-shadow: 5px 5px 10px #b05959;
-                      }
-      .clinica [type="submit"]:hover{background-color: #b8f572;
-                                      color: black;}
-      .info{width: 90%;
-            margin: 0 auto 20px;
-            padding:20px 50px;
-            line-height: 1.5;
-            }
-      .info h3{margin: 10px 0 0;
-               padding: 0;}
-      .trans{width: 30px;
-             height: 30px;
-             margin: 0 10px 0 0;
-             background-color: white;
-             border: 1px solid black;
-             border-radius: 5px;
-             }
-
-       /*ESPECÍFICO PÁGINA PLANES SALUD*/
-       .salud{margin: 5px auto;
-              padding: 10px 50px;
-              border: 2px solid #b05959;
-              border-radius: 20px;
-              background-color: #dff6df;
-              } 
-
-      /*PARA LA TABLA*/  
-      .tabla{margin: 20px auto 50px;
-            padding: 10px;
-            justify-content: center;
-             }
-      caption{font-weight: 700;
-              font-size: 40px;
-              color:#7a3b3b;
-              padding-bottom: 20px;
+       .botiga{width: 95%;
+               min-height: 150px;
+               margin: 5px auto;
+               padding: 5px 20px;
+               border: 2px solid black;
+               border-radius: 20px;
               }
-      table{border-collapse: collapse;
-            border: 2px solid green;
-            margin: auto;
-            } 
-      th, td{border-collapse: collapse;
-             border: 2px solid green;}
-      th, td{min-width: 100px;
-             min-height: 50px;
-             padding: 20px;
-            } 
-      .cabe{background-color: #dcd8d8;}
-      .t1{background-color: #cd7f32;}
-      .t2{background-color: #a9b2b8;} 
-      .t3{background-color: #8a9597;} 
-      .t4{background-color: #EFB810;}
-       td{background-color: whitesmoke;
-          font-weight: 400;} 
 
-      /*PARA ARTICLES PLANES*/
-      .planes article{max-width: 35%;
-                      min-height: 370px;
-                      margin: 30px auto;
-                      padding: 20px 20px 10px 5px;
-                      border: 2px solid green;
-                      border-radius: 25px;
-                      background-color: #f9f4ea;
-                     } 
-      .planes article h2, h3{margin:0 0 2px 0;
-                             padding:0;
-                             text-align: center;      
-                             color:#7a3b3b; 
-                            } 
-      .planes li{list-style-type: circle;}
-      .servei{list-style-type: none !important;
-              font-weight: bold;}  
+      /*ESPECÍFICO PÁGINA DE LIBROS*/
+      /*<div class="contGran"> la aprovechamos*/
+      .libros{width: 98%;
+              margin: 5px auto 20px;
+              padding: 5px 10px;
+              display: inline-flex;
+              flex-wrap: wrap;
+              text-align: center;
+              }
+       .libros h1{margin: 0 0 20px;
+                  padding: 0;
+                  text-align: center;}
+       .libros article{width: 40%;
+                       min-height: 200px;
+                       margin: 10px auto;
+                       padding: 5px 10px;
+                       display: inline-flex;
+                       flex-wrap: wrap;
+                       justify-content:space-between;
+                       border: 2px solid #56001D;
+                       border-radius: 20px;
+                       text-align: justify;
+                      }
+       .libro{width: 15%;
+              height: 270px;}
+       .libro img{width: 170px;
+                  height: 250px;
+                  margin: 20px 10px 20px 40px;
+                  border-radius: 10px;
+                  background-size: cover;}
+       .resena{width: 60%;
+               height: 270px;
+               padding: 5px 10px 30px;}
+       .realza{font-size: 20px;}
+       .resena a{text-decoration: none;
+                 color:#56001D;}
+       .resena a:hover{text-decoration: none;
+                       color:#97f5f5;}
+
+       /*ESPECÍFICO PÁGINA DE CAMISETAS*/
+      /*<div class="contGran"> la aprovechamos*/
+      .camisetas{width: 98%;
+                 margin: 5px auto;
+                 padding: 5px 10px;
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 15px;
+                 align-content:space-between;
+                 border: 2px solid black;
+                 border-radius: 20px;
+                 text-align: center;
+                 }
+       .camisetas h1{margin: 0 0 20px;
+                     padding: 0;
+                     text-align: center;}
+       .camisetas p{padding: 0 50px;}
+       .catalogo{width: 350px;
+                 min-height: 600px;
+                 margin: 10px;
+                /* padding: 10px;*/
+                 align-items: flex-start;
+                 border: 2px solid #56001D;
+                 border-radius: 15px;
+                 text-align: center;
+                 }
+       .catalogo:hover{background-color:#97f5f5;
+                       color: black;}
+       .catalogo img{width:290px;
+                     height:500px;
+                     margin: 30px 0 20px;
+                     background-color: white;
+                     /*border: 1px solid black;*/
+                     border-radius: 10px;
+                     background-size: cover;
+                     }
+       .catalogo img:hover{transform:scale(1.1);} 
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       /*ESPECÍFICO PÁGINA DE NUEVO CLIENTE*/
       /*<div class="cliente"> es el mismo formato que <div class="clinica">*/
@@ -500,43 +482,7 @@
        #borrarCli:hover{background-color: #f78383;
                         border-color: #f78383;}
 
-       /*ESPECÍFICO PÁGINA DE TIENDA*/
-       /*<div class="tienda"> es el mismo formato que <div class="clinica">*/
-       .catalogo{width: 87%;
-                 margin: 5px auto;
-                 padding: 30px;
-                 display: flex;
-                 flex-wrap: wrap;
-                 gap: 15px;
-                 align-content:space-between;
-                 border: 2px solid green;
-                 border-radius: 20px;
-                 background-color: #f9f4ea;
-                 text-align: justify;
-                 }
-       .tienda p{padding: 0 50px;}
-       .catalogo article {width: 300px;
-                          margin: 10px;
-                          padding: 10px;
-                          align-items: flex-start;
-                          border: 1px solid #b05959;
-                          border-radius: 15px;
-                          background-color: #c6e6c6;
-                          text-align: center;
-                          }
-       .catalogo article:hover{background-color: green;
-                               color: white;}
-       .catalogo img{width:260px;
-                     height:300px;
-                     margin: 10px 0;
-                     background-color: white;
-                     border: 1px solid black;
-                     border-radius: 10px;
-                     }
-       .catalogo img:hover{transform:scale(1.1);}              
-       .catalogo article p{padding: 0 10px;
-                           text-align: justify;}
-       
+              
        /*ESPECÍFICO PÁGINA POLÍTICAS*/
        /*<div class="politicas"> es el mismo formato que <div class="clinica">*/
        .politicas h1, h2{text-align: center;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecte curs Inici</title>
-    <link rel="icon" href="./gat_1.jpg"> <!--Para que aparezca el logo de la clínica en las pestañas del navegador-->
+    <link rel="icon" href="./assets/Nami Hanko 2025.png"> <!--Para que aparezca el logo de la clínica en las pestañas del navegador-->
     <meta name="author" content="Francesc Blay Costa">
 
 
@@ -13,57 +13,71 @@
 
 
 
-    <!-- Font importada de Google Fonts -->
-    <!-- Font Montserrat -->
+    <!-- Font "Montserrat" importada de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!--Para cargar los estilos CSSde la página-->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <!-- FontAwesome 5.12 -->
+    <!--FontAwesome 5.12-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
 
-    <style>
-                
-    </style>
+    <!--<script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>-->
+
+    
 </head>
 <body>
     <header>
         <div class="jun">
-            <img src="./assets/Frontal Cesc 004.png" alt="cartel tienda camisetas comic japon">
-        </div>    
-            
+            <img src="./assets/Frontal Cesc 004.png" alt="cartel de la tienda online de camisetas comic japon">
+        </div> 
     </header>
-    <main>
-        <nav>
-            <a href="#">Camisetas</a>
-            <a href="#">Sudaderas</a>
-            <a href="#">Bolsas</a>
-            <a href="#">Libros</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Contactar</a>
-            <div class="idioma">
 
-            </div>
-        </nav>
+    <main>
+        <div class="nave">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="./pages/camisetas.html">Camisetas</a>
+                <a href="#">Sudaderas</a>
+                <a href="#">Bolsas</a>
+                <a href="./pages/libros.html">Libros</a>
+                <a href="#">Sobre mi</a>
+                <a href="#">Contactar</a>
+                <div class="idiomas">
+                    <!--<div id="google_translate_element"></div>-->
+                </div>
+            </nav>
+        </div>
+        
         <div class="contGran">
              
             <div class="contNovetats"> 
-                Somos una clínica veterinaria con más de 20 años de experiencia dedicada al cuidado y bienestar de tus mascotas. 
-                Nuestro equipo de veterinarios altamente capacitados y amantes de los animales está comprometido en brindar la
-                mejor atención médica y servicios de calidad para mantener a tu mejor amigo sano y feliz.<br><br>
-                En nuestra <b>clínica</b>, ofrecemos una amplia gama de servicios que incluyen consultas veterinarias, cirugías, 
-                vacunaciones, tratamientos, hospitalización y más. Además, contamos con <b>planes de salud</b> adaptados a las 
-                necesidades específicas de cada mascota, para garantizar una atención integral a lo largo de su vida. <br><br>
-                En nuestra <b>tienda</b>, encontrarás una selección de productos de alta calidad para el cuidado y bienestar de tus 
-                mascotas, incluyendo alimentos, juguetes, accesorios y más. Estamos comprometidos en proporcionar un ambiente cálido y acogedor, donde tanto tú como tu mascota se sientan cómodos y bien atendidos.
-                Tu confianza en nosotros es nuestra mayor prioridad.
+                <article class="nuevo">
+                    <h2>Novedades</h2>
+                    Somos una clínica veterinaria con más de 20 años de experiencia dedicada al cuidado y bienestar de tus mascotas. 
+                    Nuestro equipo de veterinarios altamente capacitados y amantes de los animales está comprometido en brindar la
+                    mejor atención médica y servicios de calidad para mantener a tu mejor amigo sano y feliz.<br><br>
+                    En nuestra <b>clínica</b>, ofrecemos una amplia gama de servicios que incluyen consultas veterinarias, cirugías, 
+                    vacunaciones, tratamientos, hospitalización y más. Además, contamos con <b>planes de salud</b> adaptados a las 
+                    necesidades específicas de cada mascota, para garantizar una atención integral a lo largo de su vida. <br><br>
+                    En nuestra <b>tienda</b>, encontrarás una selección de productos de alta calidad para el cuidado y bienestar de tus 
+                    mascotas, incluyendo alimentos, juguetes, accesorios y más. Estamos comprometidos en proporcionar un ambiente cálido y acogedor, donde tanto tú como tu mascota se sientan cómodos y bien atendidos.
+                    Tu confianza en nosotros es nuestra mayor prioridad.
+                </article>
+                <article class="news">
+                    <h2>Festival Matsuri 2025</h2>
+                            El próximo fin de semana (días 21 i 22 de junio) nos podrás encontrar en nuestro 
+                            stand del <strong><em>Festival Matsuri</em></strong> que tendrá
+                            lugar en el Moll de la Fusta. Te esperamos.<br>
+                    <img src="./assets/images/jun_matsuri_24.jpg" alt="Parada de camisetas en Matsuri, la feria japonesa de Barcelona">
+                </article>
             </div>
 
             <div class="contPetit">
                 <div class="caixa">
-                    <h3>Samarretes</h3>
+                    <h3>Camisetas</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus libero nisl, congue interdum erat 
                        accumsan vitae. Morbi consectetur, tortor ut feugiat molestie, est metus pretium dolor, ut commodo nisl 
                        enim sed lacus. Aenean consectetur pellentesque nisi, sed posuere massa rhoncus quis. In pharetra tellus 
@@ -72,7 +86,7 @@
                        euismod ante. Pellentesque convallis venenatis sem, at vehicula nisi dapibus sit amet. Aliquam ut bibendum eros.</p>
                 </div>
                 <div class="caixa">
-                    <h3>Dessuadores</h3>
+                    <h3>Sudaderas</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus libero nisl, congue interdum erat 
                        accumsan vitae. Morbi consectetur, tortor ut feugiat molestie, est metus pretium dolor, ut commodo nisl 
                        enim sed lacus. Aenean consectetur pellentesque nisi, sed posuere massa rhoncus quis. In pharetra tellus 
@@ -81,16 +95,7 @@
                        euismod ante. Pellentesque convallis venenatis sem, at vehicula nisi dapibus sit amet. Aliquam ut bibendum eros.</p>
                 </div>
                 <div class="caixa">
-                    <h3>Bosses</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus libero nisl, congue interdum erat 
-                       accumsan vitae. Morbi consectetur, tortor ut feugiat molestie, est metus pretium dolor, ut commodo nisl 
-                       enim sed lacus. Aenean consectetur pellentesque nisi, sed posuere massa rhoncus quis. In pharetra tellus 
-                       a fringilla porta. Curabitur rhoncus sit amet lorem et pretium. Cras at lacus et risus venenatis hendrerit 
-                       eget vehicula eros. Duis erat erat, faucibus ut lorem non, facilisis vulputate sapien. Vestibulum vitae 
-                       euismod ante. Pellentesque convallis venenatis sem, at vehicula nisi dapibus sit amet. Aliquam ut bibendum eros.</p>
-                </div>
-                <div class="caixa">
-                    <h3>Llibres</h3>
+                    <h3>Bolsas</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus libero nisl, congue interdum erat 
                        accumsan vitae. Morbi consectetur, tortor ut feugiat molestie, est metus pretium dolor, ut commodo nisl 
                        enim sed lacus. Aenean consectetur pellentesque nisi, sed posuere massa rhoncus quis. In pharetra tellus 
@@ -100,13 +105,16 @@
                 </div>
             </div>
 
-            <img src="./assets/img/veterinarios.jpg" alt="equipo veterinarios atendiendo a un pastor alemán">
-            <p> Nos enorgullece ofrecer un enfoque integral para el cuidado de las mascotas, que incluye atención preventiva, 
-                medicina interna, cuidados especializados y asesoramiento nutricional. Trabajamos en estrecha colaboración 
-                contigo para desarrollar un plan de atención personalizado que se adapte a las necesidades individuales de tu 
-                mascota.<br><br>
-                ¡<b><a class="presCont" href="./pages/contacto.html">Contacta</a></b> con nosotros o visítanos hoy mismo y permítenos cuidar de la salud y felicidad de tu mejor amigo! Estaremos encantados de atenderos.
-               </p>
+            <div class="botiga"> 
+                <h2>Nuestra tienda</h2>           
+                <strong>Showacho-Shop</strong> es una tienda online donde podrás comprar camisetas, susaderas y bolsas ilustradas
+                 por el dibujante <a href="#">Jun Matsuura</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                 libero nisl, congue interdum erat accumsan vitae. Morbi consectetur, tortor ut feugiat molestie, est metus pretium dolor,
+                 ut commodo nisl enim sed lacus. Aenean consectetur pellentesque nisi, sed posuere massa rhoncus quis. In pharetra 
+                 tellus a fringilla porta. Curabitur rhoncus sit amet lorem et pretium. Cras at lacus et risus venenatis hendrerit 
+                 eget vehicula eros. Duis erat erat, faucibus ut lorem non, facilisis vulputate sapien. Vestibulum vitae 
+                 euismod ante. Pellentesque convallis venenatis sem, at vehicula nisi dapibus sit amet. Aliquam ut bibendum eros.<br><br>
+            </div>
         </div>
     </main>
     <footer>
@@ -116,7 +124,8 @@
                 <ul>
                 <li><span>E-mail: </span>informacion@showacho.com</li>
                 <ul class="social">
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#" target="_blank">Política de privacidad</a></li>
                     <li><a href="#" target="_blank">Política de cookies</a></li>
@@ -130,7 +139,7 @@
                     <li><a href="#">Camisetas</a></li>
                     <li><a href="#">Sudaderas</a></li>
                     <li><a href="#">Bolsas</a></li>
-                    <li><a href="#">Libros</a></li>
+                    <li><a href="./pages/libros.html">Libros</a></li>
                     <li><a href="#">Sobre mi</a></li>
                 </ul>
             </section>
@@ -151,6 +160,21 @@
             </div>
         </div>
     </footer>
-    
+   <!-- <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'es', // idioma original de tu página
+            includedLanguages: 'ca,en,', // idiomas a traducir
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                                   }, 'google_translate_element');
+                                                   }
+    </script>
+    <script type="text/javascript" 
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=ca">
+    </script>-->
+ 
+ <script type="text/javascript"  
+src="//translate.google.com/translate_a/element.js?
+ cb=googleTranslateElementInit"></script>   
 </body>
 </html>
