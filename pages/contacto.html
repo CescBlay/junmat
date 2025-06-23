@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showacho-Shop. Comics ilustrador comic Jun Matsuura</title>
-    <link rel="icon" href="../assets/Nami Hanko 2025.png">   <!--Para que aparezca el logo de la clínica en las pestañas del navegador-->
+    <title>Showacho-Shop. Contactar camiseta sudadera bolsa </title>
+    <link rel="icon" href="../assets/Nami Hanko 2025.png">    <!--Para que aparezca el logo del gato en la pestaña del navegador-->
     <meta name="author" content="Francesc Blay Costa">
     <meta name="google" content="notranslate">                <!--para que GoogleTranslator no traduzca los textos indicados-->
+
 
 
 
@@ -18,12 +19,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <!--Para cargar los estilos CSSde la página-->
+    <!--Para cargar los estilos CSS de la página-->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <!--FontAwesome 5.12-->
+    <!--Para cargar los logos de redes sociales FontAwesome 5.12-->
+    <!-- FontAwesome 5.12 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
 
-        
+    
 </head>
 <body>
     <header>
@@ -39,9 +41,9 @@
                 <a href="./camisetas.html">Camisetas</a>
                 <a href="./sudaderas.html">Sudaderas</a>
                 <a href="./bolsas.html">Bolsas</a>
-                <a href="#">Libros</a>
+                <a href="./libros.html">Libros</a>
                 <a href="./bio.html">Sobre mi</a>
-                <a href="./contacto.html">Contactar</a>
+                <a href="#">Contactar</a>
                 <div class="idiomas">
                     <div id="google_translate_element"></div>
                 </div>
@@ -52,58 +54,44 @@
         </div>
         
         <div class="contGran">
-            <h1>Libros de Jun Matsuura</h1>
-            <div class="libros"> 
-                <article>
-                    <div class="libro"><img src="../assets/images/frau_tovarich.jpg"></a></div>
-                    <div class="resena">
-                    <p class="realza"><a href="https://www.lacupula.com/catalogo/frau-tovarich-la-camarada/" target="_blank"><strong><em>Frau Tovarich</em></strong></a></p> 
-                    <p>Jun Matsuura</p>
-                    <p>Ediciones La Cúpula</p>
-                    <p>2009</p>
-                    <p>140 p.</p>
-                    <p>ISBN: 9788478338825</p>
-                    <p class="realza">12,00 €</p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="libro"><img src="../assets/images/socrates_cas.jpg"></a></div>
-                    <div class="resena">
-                    <p class="realza"><a href="https://herdereditorial.com/catalogo/filosofia/la-muerte-de-socrates-9788416540549" target="_blank"><strong><em>La muerte de Sócrates</em></strong></a></p> 
-                    <p>Jun Matsuura</p>
-                    <p>Editorial Herder</p>
-                    <p>2017</p>
-                    <p>200 p.</p>
-                    <p>ISBN: 9788416540549</p>
-                    <p class="realza">9,95 €</p>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="libro"><img src="../assets/images/socrates_cat.jpg"></a></div>
-                    <div class="resena">
-                    <p class="realza"><a href="https://herdereditorial.com/catalogo/filosofia/la-mort-de-socrates-9788416763351s" target="_blank"><strong><em>La mort de Sòcrates</em></strong></a></p> 
-                    <p>Jun Matsuura</p>
-                    <p>Editorial Herder</p>
-                    <p>2018</p>
-                    <p>200 p.</p>
-                    <p>ISBN: 9788416763351</p>
-                    <p class="realza">9,95 €</p>
-                    </div>
-                </article>
-                <article>
-                    <div class="libro"><img src="../assets/images/beethoven.jpg"></a></div>
-                    <div class="resena">
-                    <p class="realza"><a href="https://herdereditorial.com/catalogo/arte/beethoven-9788416763443" target="_blank"><strong><em>Beethoven</em></strong></a></p> 
-                    <p>Jun Matsuura</p>
-                    <p>Editorial Herder</p>
-                    <p>2021</p>
-                    <p>260 p.</p>
-                    <p>ISBN: 9788416763443</p>
-                    <p class="realza">9,95 €</p>
-                    </div>
-                </article>
+            <h1>Contacta con nosotros</h1>
+            <div class="contacto"> 
+                    <p>Si estás interesado en nuestros productos y quieres recibir información periódica sobre 
+                       nuestras novedades puedes rellenar este formulario y enviarnoslo.</p>
+                <div class="cajaform">
+                    <form id="info">
+                        <label for="nom">Nombre:</label>
+                        <input type="text"
+                               id="nom" name="nom" 
+                               placeholder="Ej: Juan Pérez"
+                               title="Entrar nombre entre 2 y 100 carácteres"
+                               pattern="[A-Za-z ñçàáèéíòóúÑÇ]{2,100}"
+                               required> <br>
+                         <label class="contakta">e-mail:</label>                   
+                            <input type="email" name="contakta"
+                                    title="Entra tu dirección de e-mail"
+                                    placeholder="Ej: showachou@gmail.com"
+                                    required> <br>
+                        <label for="telf">Teléfono:</label>
+                            <input type="text" 
+                                id="telf" name="telf" 
+                                placeholder="Ej: 999887766"
+                                title="Debe introducir 9 digitos"
+                                pattern="[1-9]{9}"
+                                required> <br> <br>
+                        <label class="soli">Solicitud información:</label> <br>
+                            <textarea name="motivo" id="motivo" 
+                                    placeholder="Motivo de su consulta." 
+                                    maxlength="500" required></textarea> <br>                              
+                        <label class="condi">Acepto condiciones legales:</label>
+                            <input type="checkbox" 
+                                   name="condiLegal" id="condiLegal"
+                                   required>
+                            <span class="polis">puede consultar nuestras <a href="./politicas.html" target="_blank">políticas de privacidad</a></span> <br>
+                            
+                            <input type="submit" value="Enviar">
+                    </form>
+                </div>    
             </div>      
         </div>
     </main>
@@ -114,7 +102,7 @@
                 <ul class="social">
                     <li><a href="mailto:showachou@gmail.com">showachou@gmail.com<i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </section>
             <section class="politicas">
@@ -131,7 +119,7 @@
                     <ul class="col1">
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./sudaderas.html">Sudaderas</a></li>
-                        <li><a href="#">Libros</a></li>
+                        <li><a href="./libros.html">Libros</a></li>
                     </ul>
                     <ul class="col2">
                         <li><a href="./camisetas.html">Camisetas</a></li>
@@ -157,17 +145,18 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
+   <script type="text/javascript">
             function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-            pageLanguage: 'es', // idioma original de tu página
-            includedLanguages: 'ca,en,es', // idiomas a traducir
+            pageLanguage: 'es',                                                          // idioma original de la página
+            includedLanguages: 'ca,en,es',                                               // idiomas a traducir
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
                                                    }, 'google_translate_element');
                                                    }
     </script> 
-    <script type="text/javascript"  
+     <script type="text/javascript"  
              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=ca">
     </script>
+  
 </body>
 </html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de camisetas con dibujos de Jun Matsuura</title>
-    <link rel="icon" href="../assets/Nami Hanko 2025.png"> <!--Para que aparezca el logo de la clínica en las pestañas del navegador-->
+    <title>Showacho-Shop. Catálogo. Encuentra tu camiseta.</title>
+    <link rel="icon" href="../assets/Nami Hanko 2025.png">      <!--Para que aparezca el logo del gato en la pestaña del navegador-->
     <meta name="author" content="Francesc Blay Costa">
-
+    <meta name="google" content="notranslate">                  <!--para que GoogleTranslator no traduzca los textos indicados-->
 
 
 
@@ -23,9 +23,7 @@
     <!--FontAwesome 5.12-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
 
-    <!--<script src="https://unpkg.com/i18next/i18next.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>-->
-
+    
     
 </head>
 <body>
@@ -40,15 +38,18 @@
             <nav>
                 <a href="../index.html">Inicio</a>
                 <a href="#">Camisetas</a>
-                <a href="#">Sudaderas</a>
-                <a href="#">Bolsas</a>
+                <a href="./sudaderas.html">Sudaderas</a>
+                <a href="./bolsas.html">Bolsas</a>
                 <a href="./libros.html">Libros</a>
-                <a href="#">Sobre mi</a>
-                <a href="#">Contactar</a>
+                <a href="./bio.html">Sobre mi</a>
+                <a href="./contacto.html">Contactar</a>
                 <div class="idiomas">
-                    <!--<div id="google_translate_element"></div>-->
+                    <div id="google_translate_element"></div>
                 </div>
             </nav>
+             <div class="carrito"> 
+                <img src="../assets/carrito.png" alt="carrito de la compra">
+            </div>
         </div>
         
         <div class="contGran">
@@ -59,35 +60,37 @@
                 avenga a vuestros gustos. Cuando se seleccione una opción se ampliará la información del producto escogido.</p>
                 <article class="catalogo">
                     <img src="../assets/images/camiseta_kimekomi_1.jpg" alt="camiseta de algodón ecológico Kimekomi negra"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
                     <img src="../assets/images/camiseta_kimekomi_2.jpg" alt="camiseta de algodón ecológico Kimekomi marrón"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_namichan.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <img src="../assets/images/camiseta_namichan.jpg" alt="camiseta de algodón ecológico Namichan"> <br>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_nekoha.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <img src="../assets/images/camiseta_nekoha.jpg" alt="camiseta de algodón ecológico Nekoha"> <br>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_ootobaizamurai.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <img src="../assets/images/camiseta_ootobaizamurai.jpg" alt="camiseta de algodón ecológico Samurai Ootobai"> <br>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_porro_samurai.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <img src="../assets/images/camiseta_porro_samurai.jpg" alt="camiseta de algodón ecológico Porró samurai"> <br>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_skate_maiko copia.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <img src="../assets/images/camiseta_skate_maiko copia.jpg" alt="camiseta de algodón ecológico Skate Maiko"> <br>
+                    <p>Precio: 25€</p>
                 </article>
                 <article class="catalogo">
-                    <img src="../assets/images/camiseta_umeko.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
-                    <p>Precio: <b>25€</b></p>
+                    <a href="./producto.html" target="_self">
+                        <img src="../assets/images/camiseta_umeko.jpg" 
+                            alt="camiseta de algodón ecológico Umeko"></a> <br>
+                    <p>Precio: 25€</p>
                 </article>               
             </div>      
         </div>
@@ -96,26 +99,34 @@
         <div class="peu">            
             <section class="contacte">
                 <h3>Contacto</h3>
-                <ul>
-                <li><span>E-mail: </span>informacion@showacho.com</li>
                 <ul class="social">
+                    <li><a href="mailto:showachou@gmail.com">showachou@gmail.com<i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#" target="_blank">Política de privacidad</a></li>
-                    <li><a href="#" target="_blank">Política de cookies</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </section>
+            <section class="politicas">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href="./politicas.html" target="_blank">Política de privacidad</a></li>
+                    <li><a href="./cookies.html" target="_blank">Política de cookies</a></li>
                     <li><a href="#" target="_blank">Aviso legal</a></li>
                 </ul>
             </section>
             <section class="sitio">
                 <h3>Mapa del sitio</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Sudaderas</a></li>
-                    <li><a href="#">Bolsas</a></li>
-                    <li><a href="#">Libros</a></li>
-                    <li><a href="#">Sobre mi</a></li>
-                </ul>
+                <div class="col12">
+                    <ul class="col1">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./sudaderas.html">Sudaderas</a></li>
+                        <li><a href="./libros.html">Libros</a></li>
+                    </ul>
+                    <ul class="col2">
+                        <li><a href="./camisetas.html">Camisetas</a></li>
+                        <li><a href="./bolsas.html">Bolsas</a></li>
+                        <li><a href="./bio.html">Sobre mi</a></li>
+                    </ul>
+                </div>
             </section>
             <aside>
                 <h3>Páginas amigas</h3>
@@ -134,21 +145,17 @@
             </div>
         </div>
     </footer>
-   <!--<script type="text/javascript">
+    <script type="text/javascript">
             function googleTranslateElementInit() {
             new google.translate.TranslateElement({
             pageLanguage: 'es', // idioma original de tu página
-            includedLanguages: 'ca,en,', // idiomas a traducir
+            includedLanguages: 'ca,en,es', // idiomas a traducir
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
                                                    }, 'google_translate_element');
                                                    }
-    </script> 
-    <script type="text/javascript" 
-            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=ca">
-    </script>-->
- 
- <script type="text/javascript"  
-src="//translate.google.com/translate_a/element.js?
- cb=googleTranslateElementInit"></script>   
+     </script> 
+     <script type="text/javascript"  
+             src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=ca">
+    </script>
 </body>
 </html>
