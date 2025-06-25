@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Umeko algodon ecologico.</title>
+    <link rel="icon" href="./assets/Nami Hanko 2025.png">     <!--Para que aparezca el logo del gato en la pestaña del navegador-->
+    <meta name="author" content="Francesc Blay Costa">
+    <meta name="google" content="notranslate">                 <!--para que GoogleTranslator no traduzca los textos indicados-->
+
+    <!-- Font "Montserrat" importada de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Para cargar los estilos CSSde la página-->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!--FontAwesome 5.12-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="contPro">
+        <div class="titol">
+            <h1>Camiseta Umeko</h1>
+        </div>     
+        <div class="contProducte"> 
+            <div class="contDibuix">
+                <img src="../assets/images/camiseta_umeko.jpg" alt="camiseta de algodón ecológico Umeko">
+            </div>   
+            <div class="contInfo">
+                <div class="ilustracio">
+                    <img src="../assets/images/Umeko Dibuix.jpg" alt="Dibujo Umeko para camiseta algodon">
+                </div>
+                <div class="detalles">
+                    <h3>Detalles producto:</h3>
+                    <div class="botonesTallas">
+                        Tallas: 
+                        <button>XS</button>
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+                        <button>XXL</button>
+                     </div>
+                     <div class="botonesColores">
+                         Colores:
+                        <button id="negro"></button>
+                        <button id="marron"></button>
+                        <button id="gris"></button>
+                        <button id="azul"></button>
+                        <button id="blanco"></button>
+                        <button id="violeta"></button>
+                        <button id="verde"></button>
+                        <button id="rojo"></button>
+                     </div>   
+                    <p>Precio: 25 €</p>
+                    <p>Camiseta de algodón ecológico de color negro con el dibujo de una niña con una cámara fotográfica.</p>
+                    <div class="cantidad">
+                        <form action="">
+                            <label for="compra">Cantidad:</label>
+                            <input type="number" id="compra"
+                                pattern="[0-9]"
+                                value="1"                            
+                                required>
+                            <input type="submit" id="añadir" value="Comprar">      
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>        
+</body>
+</html>
