@@ -71,10 +71,10 @@
        .idiomas:hover{background-color: #97f5f5; /*Cambio de apariencia cuando pasamos ratón encima*/
                       color: black;}
        .carrito{margin: 0 10px 5px 50px;
-                width: 80px;
+                width: 100px;
                 padding: 2px;
                 align-content: center;
-                font-size: larger;
+                font-size:xx-large;
                 }    
        
        /*RESPONSIVE NAVEGADOR Y TAMAÑO TEXTO MAIN: Adaptamos el navegador a las diferentes  
@@ -95,7 +95,7 @@
                                             }
                                    #google_translate_element{font-size: 10px;}
                                    .carrito{margin-left: 40px;}
-                                   main{font-size: 12px;}                                                                                 
+                                   main{font-size: 14px;}                                                                                 
                                    }
        @media (min-width: 641px) and (max-width: 1024px){nav{margin: auto;
                                                              gap: 8px;
@@ -138,7 +138,8 @@
                                     margin: 0 auto;
                                     padding: 0 10px;
                                    }
-       .sitio{display: block;
+       .fa-envelope-open-o{font-size: 14px;}
+      .sitio{display: block;
               width: 100%;
               margin: 0 auto;
               padding: 0;
@@ -153,15 +154,13 @@
                     color:blue;}
        
        .sitio div{width: 100%;
-                  margin: 0 0 0 70px;
+                  margin: auto;
                   padding: 0;
                   display: flex;
-                  flex-wrap: wrap;
                   gap: 30px;
-                  }
-       .col1, .col2{margin: 0;
-                    padding: 0;
-                    }
+       }
+           
+       .col1, .col2{margin: auto !important;}
        
        .drets{width: 100%;
               height: 125px;
@@ -211,7 +210,7 @@
                                    .dret1, .dret2{height: 65px;}
                                    .logoCat{width: 60px;
                                           height: 60px;}
-                                   .dret2 h4{font-size: 12px;}
+                                   .dret2 h4{font-size: 14px;}
                                    }
         @media (min-width: 640px) and (max-width: 1024){footer{font-size: 12px;}
                                                         .peu{width: 50%;
@@ -223,12 +222,12 @@
                                                         .dret1, .dret2{height: 90px;}
                                                         .logoCat{width: 88px;
                                                                height: 88px;}
-                                                        .dret2 h4{font-size: 14px;}
+                                                        .dret2 h4{font-size: 16px;}
                                                         }
 
                                    
        /*ESPECÍFICO PÁGINA DE INICIO*/
-       .contGran{width: 96%;
+       .contGran{width: 95%;
                  margin: 10px auto;
                  padding: 5px 10px;
                  border-radius: 30px;
@@ -288,8 +287,8 @@
                 }
        .novetat:hover{background-color:#97f5f5;
                       color: black;}
-       .novetat img{width:260px;                       /*imágen artículo*/
-                    height:380px;
+       .novetat img{/*max-width: 260px;*/                       /*imágen artículo*/
+                    max-height: 382px;
                     margin: 30px 0 20px;
                     background-color: white;
                     border-radius: 10px;
@@ -332,6 +331,7 @@
                 border: 2px solid #56001D;
                 border-radius: 15px;
                 text-align: center;
+                box-sizing: content-box;
                 }
        .catacami h3{margin: 20px 0 0;
                      padding: 0;}
@@ -345,16 +345,21 @@
                      background-size: cover;
                     }
        .catacami img:hover{transform:scale(1.1);} 
-       .totebag{width:250px !important;                         /*imagen bolsa*/
-                height:340px !important;
-                margin:0 0 20px;
-                padding:0;
-                background-color: white;
-                border-radius: 10px;
+       .totebag{width: 320px;                        /*imagen bolsa*/
+                height: 440px;
+                margin: 10px auto;
+                /*background-color: white;*/
+                border: 2px solid #56001D;
+                border-radius: 15px;
                 background-size: cover;
                 }
+       .totebagImag{width: 240px;                    
+                     height: 340px;
+                     margin: 0 0 20px;
+                     border-radius: 15px;
+                     }
 
-       .botiga{width: 95%;
+       .botiga{width: 90%;
                min-height: 150px;
                margin: 10px auto 20px;
                padding: 5px 20px;
@@ -364,150 +369,97 @@
        .botiga p{padding: 0 20px;
                  text-align:justify;}
 
-       @media (max-width: 505px){.contNovetats{min-height:740px}
-                                 .catNovetat{min-height: 520px;  
-                                             display: flex;
-                                             flex-wrap: wrap;
-                                             margin: 5px auto;
-                                             text-align: center;
-                                             font-size: 12px;
-                                             }
-                                   .nuevo{width: 95%;
-                                          min-height: 810px;
+       @media (max-width: 640px){.contNovetats{min-height:490px}
+                                   .catNovetat{max-height: 383px;  
+                                                 display: flex;
+                                                 flex-wrap: wrap;
+                                                 margin: 5px auto;
+                                                 text-align: center;
+                                                 font-size: 14px;
+                                                 }
+                                   .nuevo{width: 90%;
+                                          min-height: 1000px;
                                           margin: 10px auto 0;
                                           padding: 2px 5px;
                                           display: block;
                                           flex-wrap: wrap;
                                           gap: 5px; 
                                           }
-                                   .novetat{width: 212px;                         
-                                            height: 320px;
+                                   .novetat{width: 260px;                         
+                                            height: 410px;
                                             margin: 10px auto 0;
                                             display: block;
                                             }    
-                                   .novetat img{width: 172px;                       
-                                                height: 251px;
-                                                margin: 20px 0 10px;                                                 
-                                                } 
-                                                
-                                   .news{width: 95%;                               
-                                          max-height: 450px;
-                                          margin: 10px auto 0;             
-                                          padding: 5px 10px;                                     
-                                          }
-                                  
-                                   .news img{max-height: 65%;                     
-                                             margin: 0 auto 10px;
-                                             text-align: center;
-                                             border-radius: 10px;
-                                             }  
-                                   .caixa{width:95%;
+                                   .novetat img{width: 220px;                       
+                                                 height: 340px;
+                                                 margin: 20px 0 15px;                                                 
+                                                 }                                                 
+                                   .news{width: 90%;                               
+                                          max-height: 510px;}                                  
+                                   .news img{max-width: 260px;
+                                             max-height: 610px;}  
+                                   .caixa{width:70%;
                                           min-height: 200px;
                                           margin: 2px auto;
-                                          padding: 0 10px 2px;
-                                          }                                          
-                                                           
-                                   .catacami{width: 212px;                         
-                                             height: 285px;
+                                          padding: 0 10px 5px;
+                                          }                       
+                                   .catacami{width: 250px;                         
+                                             height: 345px;
                                              margin: 5px auto;
-                                            }
-                                   .catacami img{width: 172px;                       
-                                                 height: 251px;
+                                             } 
+                                   .catacami img{width: 210px;                       
+                                                 height: 310px;
                                                  margin: 15px 0 10px;
                                                  }
-                                                  
+                                   .totebag{width: 250px;                         
+                                                 height: 345px;
+                                                 margin: 5px auto;
+                                                 border: 2px solid #56001D;
+                                                 border-radius: 15px;
+                                                 text-align: center;
+                                                 }             
+                                   .totebagImag{width: 180px;                    
+                                                 height: 250px;
+                                                 margin: 15px 0 10px;
+                                                 }
+                                                        
                                    .botiga{width: 90%;
-                                           min-height: 150px;
-                                           margin: 10px auto 20px;
-                                           padding: 5px 20px;
+                                          margin: 10px auto 20px;
+                                          padding: 5px 20px;
                                           }
                                    }
-       @media (min-width: 506px) and (max-width: 640px){.contNovetats{min-height:740px}
-                                                        .catNovetat{min-height: 520px;  
-                                                                      display: flex;
-                                                                      flex-wrap: wrap;
-                                                                      margin: 5px auto;
-                                                                      text-align: center;
-                                                                      font-size: 12px;
-                                                                      }
-                                                               .nuevo{width: 95%;
-                                                                      max-height: 440px;
-                                                                      margin: 10px auto 0;
-                                                                      padding: 2px 5px;
-                                                                      display: block;
-                                                                      flex-wrap: wrap;
-                                                                      gap: 5px; 
-                                                                      }
-                                                               .novetat{width: 212px;                         
-                                                                      height: 320px;
-                                                                      margin: 10px auto 0;
-                                                                      display: block;
-                                                                      }    
-                                                               .novetat img{width: 172px;                       
-                                                                      height: 251px;
-                                                                      margin: 20px 0 10px;                                                 
-                                                                      }                                                 
-                                                               .news{width: 95%;                               
-                                                                      max-height: 440px;
-                                                                      margin: 10px auto 0;             
-                                                                      padding: 5px 10px;                                     
-                                                                      }                                  
-                                                               .news img{max-height: 70%;                     
-                                                                      margin: 0 auto 10px;
-                                                                      text-align: center;
-                                                                      border-radius: 10px;
-                                                                      }  
-                                                               .caixa{width:95%;
-                                                                      min-height: 200px;
-                                                                      margin: 2px auto;
-                                                                      padding: 0 10px 2px;
-                                                                      }                       
-                                                               .catacami{width: 212px;                         
-                                                                      height: 285px;
-                                                                      margin: 5px auto;
-                                                                      }
-                                                               .catacami img{width: 172px;                       
-                                                                             height: 251px;
-                                                                             margin: 15px 0 10px;
-                                                                             }
-                                                                             
-                                                               .botiga{width: 90%;
-                                                                      min-height: 150px;
-                                                                      margin: 10px auto 20px;
-                                                                      padding: 5px 20px;
-                                                                      }
-                                                        }
+                                       
  @media (min-width: 641px) and (max-width: 1024px){.contNovetats{min-height:740px}
-                                                        .catNovetat{max-height: 580px;  
+                                                   .catNovetat{max-height: 580px;  
                                                                display: flex;
                                                                flex-wrap: wrap;
                                                                margin: 5px auto;
                                                                text-align: center;
                                                                font-size: 14px;
                                                                }
-                                                        .nuevo{width: 95%;
-                                                           max-height: 580px;
-                                                           margin: 10px auto 0;
-                                                           padding: 2px 5px;
-                                                           display: inline-flex;
-                                                           flex-wrap: wrap;
-                                                           gap: 5px; 
-                                                           }
-                                                        .novetat{width: 270px;                         
-                                                              height: 450px;
-                                                              margin: 10px auto 0;
-                                                              display: block;
-                                                              }    
-                                                        .novetat img{width: 230px;                       
-                                                                    height: 380px;
-                                                                    margin: 20px 0 15px;                                                 
-                                                                      }                                                 
+                                                   .nuevo{width: 95%;
+                                                          max-height: 580px;
+                                                          margin: 10px auto 0;
+                                                          padding: 2px 5px;
+                                                          display: inline-flex;
+                                                          flex-wrap: wrap;
+                                                          gap: 5px; 
+                                                          }
+                                                    .novetat{width: 260px;                         
+                                                             height: 410px;
+                                                             margin: 10px auto 0;
+                                                             display: block;
+                                                             }    
+                                                      .novetat img{width: 220px;                       
+                                                                   height: 340px;
+                                                                   margin: 20px 0 15px;                                                 
+                                                                   }                                                 
                                                         .news{width: 95%;                               
-                                                               max-height: 580px;
+                                                               max-height: 640px;
                                                                margin: 10px auto 0;             
                                                                padding: 5px 10px;                                     
                                                                       }                                  
-                                                        .news img{max-height: 75%;                     
+                                                        .news img{max-height: 73%;                     
                                                                   margin: 0 auto 10px;
                                                                   text-align: center;
                                                                   border-radius: 10px;
@@ -525,13 +477,24 @@
                                                                       height: 310px;
                                                                       margin: 15px 0 10px;
                                                                       }
+                                                        .totebag{width: 250px;                         
+                                                                     height: 345px;
+                                                                     margin: 5px auto;
+                                                                     border: 2px solid #56001D;
+                                                                     border-radius: 15px;
+                                                                     text-align: center;
+                                                                     }             
+                                                        .totebagImag{width: 180px;                    
+                                                                    height: 250px;
+                                                                    margin: 15px 0 10px;
+                                                                    }
                                                                              
-                                                               .botiga{width: 90%;
-                                                                      min-height: 150px;
-                                                                      margin: 10px auto 20px;
-                                                                      padding: 5px 20px;
-                                                                      }
+                                                        .botiga{width: 90%;
+                                                               min-height: 150px;
+                                                               margin: 10px auto 20px;
+                                                               padding: 5px 20px;
                                                                }
+                                                        }
 
       /*ESPECÍFICO PÁGINA DE LIBROS*/
       /*<div class="contGran"> la aprovechamos*/
@@ -546,25 +509,24 @@
               }
        .libros h1{margin: 0 0 20px;
                   padding: 0;}
-       .libros article{width: 40%;
+       .libros article{width: 48%;
                        min-height: 270px;
                        margin: 10px auto;
-                       padding: 5px 10px;
                        display: inline-flex;
                        flex-wrap: wrap;
-                       gap: 30px;
+                       gap: 20px;
                        align-items: flex-start;
                        border: 2px solid #56001D;
                        border-radius: 20px;
                        text-align: center;
                        box-sizing: content-box;
                       }
-       .libro{width: 15%;
-              margin: 20px 10px;
+       .libro{max-width: 20%;
+              margin: 20px 5px;
               height: 280px;
               display: inline-flex;
               flex-wrap: wrap;
-              gap: 30px;
+              gap: 20px;
               box-sizing: content-box;
               }
        .libro img{width: 180px;
@@ -572,13 +534,14 @@
                   margin: 10px;
                   border-radius: 10px;
                   background-size: cover;}
-       .resena{width: 60%;
-               margin: 20px 0 0 100px;
+       .resena{max-width: 65%;
+               margin: 20px 0 0 80px;
                height: 270px;
                padding-top: 35px;
                display: block;
                flex-wrap: wrap;
                gap: 10px;
+               text-align: justify;
                box-sizing: content-box;}
        .resena p{margin:0 0 3px;}
        .realza{margin-top: 10px;
@@ -587,42 +550,48 @@
                  color:#56001D;}
        .resena a:hover{text-decoration: none;
                        color:#97f5f5;}
-       @media (max-width: 640px){.libros article{margin: 2px auto;
-                                                 padding: 0;
-                                                 display: inline-block;
+
+
+       @media (max-width: 640px){.libros{width:50%}
+                                  .libros article{width:90%;
+                                   min-height: 450px;
+                                                 margin: 2px auto;
+                                                 padding: 5px;
+                                                 display: block;
                                                  gap: 0;
                                                  font-size: small;
                                                  }
-                                                 .libro{width: 95px;
-                                                        height: 135px;
-                                                        margin: 20px auto;
-                                                        }
-                                                 .libro img{width: 92px;
-                                                            height: 130px;
-                                                            margin: 5px;
-                                                            padding: 0;
-                                                           }
-                                                 .resena{margin: 5px auto 0;
-                                                         max-height: 240px;
-                                                         padding: 0;
-                                                         display: block;
-                                                         }
-                                                 .resena p{text-align: justify;}
-                                                 .realza{margin-top: 5px;
-                                                         font-size: 12px;}
-                                 }
-       @media (min-width: 641px) and (max-width: 1024px){.libros article{margin: 8px auto;
-                                                                         padding: 3px 7px;
-                                                                         display: inline-block;
+                                   .libro{min-width: 140px;
+                                          height: 135px;
+                                          margin: 20px auto;
+                                          }
+                                   .libro img{width: 135px;
+                                                 height: 180px;
+                                                 margin: 5px;
+                                                 }
+                                   .resena{margin: 10px auto 0;
+                                                 max-height: 180px;
+                                                 padding: 10px;
+                                                 display: block;
+                                                 }
+                                   .resena p{text-align: justify;}
+                                   .realza{margin-top: 5px;
+                                                 font-size: 12px;}
+                     }
+       @media (min-width: 641px) and (max-width: 1024px){.libros article{width:35%;
+                                                                         margin: 8px auto;
+                                                                         padding: 10px;
+                                                                         display: block;
                                                                          gap: 0;
                                                                          font-size: medium;
                                                                          }
-                                                        .libro{width: 150px;
-                                                               height: 210px;
-                                                               margin: 5px auto;
+                                                        .libro{width: 180px;
+                                                               height: 250px;
+                                                               margin: 10px auto;
+                                                               display:inline;
                                                                padding: 0;}
-                                                        .libro img{width: 142px;
-                                                                    height: 200px;
+                                                        .libro img{width: 155px;
+                                                                    height: 220px;
                                                                     margin: 5px;
                                                                     padding: 0;
                                                                    }
@@ -685,35 +654,7 @@
                                                                         margin: 30px 0 10px;}
                                   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       /*ESPECÍFICO PÁGINA SOBRE MI*/
+      /*ESPECÍFICO PÁGINA SOBRE MI*/
       /*<div class="contGran"> la aprovechamos*/
       .bio{width: 98%;
            margin: 0 auto 20px;
@@ -751,8 +692,6 @@
                                                                    font-size: medium;}
                                                         }
 
-
-
        /*ESPECÍFICO PÁGINA CONTACTO*/
        /*<div class="contGran"> la aprovechamos*/
        .contacto{width: 98%;
@@ -765,11 +704,11 @@
        .contacto p{margin: 0 30px 20px;
                    text-align: justify;
                    }
-       .cajaform{width: 55%;
+       .cajaform{width: 50%;
                  min-height: 370px;
                  margin: 0 auto;
                  display: block;
-                 background-color:#faf5d7;
+                 background-color:#97f5f5;
                  border: 2px solid #56001D;
                  border-radius: 15px;
                  }
@@ -793,23 +732,67 @@
                margin: 10px 0 0 20px;
                font-size: 14px;
                resize: none;
-              }          
-       .condi{margin: auto;
+              }
+       #condiLegal{width:15px !important;
+                  margin: 8px 0;
+                  
+              }                
+       .condi{margin:0;
               padding: 10px 0;
               font-size: 14px;}                   
        .polis{margin: auto;
               padding: 10px 0;
               font-size: 14px;}                          
-       #info [type="submit"]{margin: 10px auto 10px;
-                             width: 120px;
-                             height: 40px;
-                             padding: 5px;
-                             border-radius: 20px;
-                             background-color: green;
-                             color:#faf5d7;
-                             font-weight: bold;
-                             box-shadow: 5px 5px 10px #b05959;
-                             }
+       #info [type="submit"]{margin: 15px auto;
+                            width: 80px;
+                            height: 40px;
+                            padding: 5px;
+                            border-radius: 20px;
+                            background-color: green;
+                            color:#faf5d7;
+                            font-weight: bold;
+                            box-shadow: 3px 3px 6px #56001D;;
+                            }
+
+       @media (max-width: 640px){.cajaform{width: 80%;
+                                           min-height: 370px;
+                                           margin: 0 auto;
+                                           font-size: 12px;
+                                           }
+                                  #info{min-height: 250px;
+                                        margin: 15px auto;
+                                        font-size: 12px;
+                                        }
+                                   #info input{width: 230px;
+                                               font-size: 12px;}
+                                   #motivo{width: 85%;
+                                          min-height: 130px;
+                                          margin: 10px 0 0 20px;
+                                          font-size: 14px;
+                                          resize: none;
+                                          }
+                                   }       
+
+
+
+
+       @media (min-width: 641px) and (max-width: 1024px){.cajaform{width: 80%;
+                                                                   min-height: 370px;
+                                                                   margin: 0 auto;
+                                                                  }
+                                                        #info{min-height: 300px;
+                                                              margin: 20px auto;
+                                                              font-size: 14px;
+                                                              }
+                                                        #info input{font-size: 14px;}
+                                                        }       
+
+
+
+
+
+
+
 
        /*ESPECÍFICO PÁGINA DE PRODUCTO*/
        .contPro{width: 100%;
