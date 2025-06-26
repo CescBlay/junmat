@@ -57,7 +57,67 @@
                         stand en el Festival Matsuri. </p>
                     <div class="catNovetat">
                         <article class="novetat">
-                            <img src="./assets/images/camiseta_namichan.jpg" alt="camiseta de algodón ecológico Kimenoki"> <br>
+                            <img src="./assets/images/camiseta_namichan.jpg" alt="camiseta de algodón ecológico Kimenoki"> 
+                            <!-- Modal -->
+                            <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+                                <div class="modal__dialog" role="document">
+                                <button class="modal__close" aria-label="Cerrar modal">&times;</button>
+                                <div class="modal__content">
+                                    <div id="contPro">
+                                        <div class="titol">
+                                            <h1>Camiseta Umeko</h1>
+                                        </div>     
+                                        <div class="contProducte"> 
+                                            <div class="contDibuix">
+                                                <img src="./assets/images/camiseta_umeko.jpg" 
+                                                      alt="camiseta de algodón ecológico Umeko">
+                                            </div>   
+                                            <div class="contInfo">
+                                                <div class="ilustracio">
+                                                    <img src="./assets/images/Umeko Dibuix.jpg" 
+                                                         alt="dibujo Umeko para camiseta algodon">
+                                                </div>
+                                                <div class="detalles">
+                                                    <h3>Detalles producto:</h3>
+                                                    <div class="botonesTallas">
+                                                        Tallas: 
+                                                        <button>XS</button>
+                                                        <button>S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                        <button>XXL</button>
+                                                    </div>
+                                                    <div class="botonesColores">
+                                                        Colores:
+                                                        <button id="negro"></button>
+                                                        <button id="marron"></button>
+                                                        <button id="gris"></button>
+                                                        <button id="azul"></button>
+                                                        <button id="blanco"></button>
+                                                        <button id="violeta"></button>
+                                                        <button id="verde"></button>
+                                                        <button id="rojo"></button>
+                                                    </div>   
+                                                    <p>Precio: 25 €</p>
+                                                    <p>Camiseta de algodón de color negro con el dibujo de una niña con 
+                                                        una cámara fotográfica.</p>
+                                                    <div class="cantidad">
+                                                        <form action="">
+                                                            <label for="compra">Cantidad:</label>
+                                                            <input type="number" id="compra"
+                                                                pattern="[0-9]"
+                                                                value="1"                            
+                                                                required>
+                                                            <input type="submit" id="añadir" value="Comprar">      
+                                                        </form>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                </div>
+                                </div>
+                            </div><br>
                             <p>Precio: 25€</p>
                         </article>
                         <article class="novetat">
@@ -123,8 +183,8 @@
             <section class="contacte">
                 <h3>Contacto</h3>
                 <ul class="social">
-                    <li><a href="mailto:showachou@gmail.com"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>showachou@gmail.com</a></li>
-                    <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="mailto:showachou@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> showachou@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/showa_cho/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </section>
@@ -180,5 +240,49 @@
     <script type="text/javascript"  
              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=ca">
     </script> 
+    <!--SCRIPT MODAL-->
+    <script>
+    // Elementos relevantes
+    const modal = document.getElementById("modal");
+    const thumb = document.getElementById("thumb");
+    const modalImg = document.getElementById("modalImg");
+    const contPro = document.getElementById("contPro");
+    const closeBtn = modal.querySelector(".modal__close");
+
+    // --- Abrir Modal ---
+    thumb.addEventListener("click", () => {
+      // Cargamos una versión más grande de la imagen (+ texto)
+      modalImg.src = thumb.src.replace("/300/200", "/800/600");
+      caption.textContent = thumb.alt;
+      openModal();
+    });
+
+    // --- Cerrar Modal ---
+    closeBtn.addEventListener("click", closeModal);
+
+    // Cerrar haciendo clic fuera del cuadro
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // Cerrar con la tecla Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+
+    function openModal() {
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      // Gestión de foco
+      closeBtn.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      // Devolvemos el foco a la miniatura
+      thumb.focus();
+    }
+  </script>
 </body>
 </html>

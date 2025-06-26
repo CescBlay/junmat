@@ -138,8 +138,7 @@
                                     margin: 0 auto;
                                     padding: 0 10px;
                                    }
-       .fa-envelope-open-o{font-size: 14px;}
-      .sitio{display: block;
+       .sitio{display: block;
               width: 100%;
               margin: 0 auto;
               padding: 0;
@@ -378,7 +377,7 @@
                                                  font-size: 14px;
                                                  }
                                    .nuevo{width: 90%;
-                                          min-height: 1000px;
+                                          min-height: 1050px;
                                           margin: 10px auto 0;
                                           padding: 2px 5px;
                                           display: block;
@@ -395,7 +394,7 @@
                                                  margin: 20px 0 15px;                                                 
                                                  }                                                 
                                    .news{width: 90%;                               
-                                          max-height: 510px;}                                  
+                                          max-height: 620px;}                                  
                                    .news img{max-width: 260px;
                                              max-height: 610px;}  
                                    .caixa{width:70%;
@@ -787,13 +786,6 @@
                                                         #info input{font-size: 14px;}
                                                         }       
 
-
-
-
-
-
-
-
        /*ESPECÍFICO PÁGINA DE PRODUCTO*/
        .contPro{width: 100%;
                 margin:0;
@@ -834,15 +826,15 @@
        .contInfo{width: 55vw;
                  margin: 10px auto;
                  box-sizing: content-box;
-                 border: 1px solid black;
-                 border-radius: 20px;
+                 /*border: 1px solid black;
+                 border-radius: 20px;*/
                  text-align: justify;
                  } 
        .ilustracio{width: 50vw;              
                    margin: 5px auto;
                    text-align: center;
-                   border: 1px solid black;
-                   border-radius: 15px;
+                   /*border: 1px solid black;
+                   border-radius: 15px;*/
                    } 
        .ilustracio img{width: 20vw;
                        margin:5px auto;
@@ -853,7 +845,7 @@
        .detalles{width: 50vw;
                  margin: 5px auto;
                  padding: 5px 20px;
-                 border: 2px solid black;
+                 /*border: 2px solid black;*/
                  text-align: justify;
                  color:#56001D;
                  }
@@ -935,9 +927,167 @@
                text-align: justify;
              }
       .legal p{padding: 0 25px;}
-      /*ESPECÍFICO PÁGINA POLÍTICAS*/
+      /*ESPECÍFICO PÁGINA POLÍTICAS Y AVISO LEGAL*/
       /*<div class="contGran"> y >dic class="legal"> las aprovechamos*/
 
+      /*ESPECÍFICO MODAL*/
+      :root {
+      --backdrop: rgba(0, 0, 0, 0.7);
+      --speed: 0.3s;
+    }
+    /* Modal base (overlay) */
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--backdrop);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--speed) ease;
+      z-index: 999;
+    }
+
+    /* Estado visible */
+    .modal.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Botón cerrar */
+    .modal__close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      color: #888;
+    }
+
+    .modal__close:hover {
+      color: #000;
+    }
+
+    /* Contenido */
+   /*ESPECÍFICO PÁGINA DE PRODUCTO*/
+       .contPro{width: 80%;
+                margin:0;
+                padding: 0;
+                background-color: #faf5d7;
+                text-align: center;
+                color:#56001D
+                 }
+       .titol{width: 98vw;
+              height: 10vh;
+              margin: 0 auto;
+              padding: 0;
+              }
+       .titol h1{margin:5px;
+                 padding: 0;
+                 text-align: center;
+                 font-size: 60px;
+                 }        
+       .contProducte{width: 98vw;
+                     margin: 5px auto;
+                     display: inline-flex;
+                     flex-wrap: wrap;
+                     gap: 15px;
+                     justify-content:space-between;
+                     border: 2px solid #56001D;
+                     border-radius: 20px;
+                     }
+       .contDibuix{width: 35vw;
+                   margin:10px auto;
+                   text-align: center;
+                   }
+       .contDibuix img{width: 30vw;
+                       margin:5px auto;
+                       text-align: center;
+                       border-radius: 15px;
+                       background-size: cover;
+                       }
+       .contInfo{width: 55vw;
+                 margin: 10px auto;
+                 box-sizing: content-box;
+                 /*border: 1px solid black;
+                 border-radius: 20px;*/
+                 text-align: justify;
+                 } 
+       .ilustracio{width: 50vw;              
+                   margin: 5px auto;
+                   text-align: center;
+                   /*border: 1px solid black;
+                   border-radius: 15px;*/
+                   } 
+       .ilustracio img{width: 20vw;
+                       margin:5px auto;
+                       text-align: center;
+                       border-radius: 15px;
+                       background-size: cover;
+                      }                               
+       .detalles{width: 50vw;
+                 margin: 5px auto;
+                 padding: 5px 20px;
+                 /*border: 2px solid black;*/
+                 text-align: justify;
+                 color:#56001D;
+                 }
+       .detalles h3{margin: 5px 0 10px;
+                    padding: 0;
+                    text-align: center;}
+       .detalles p{margin: 5px 15px;}
+       .botonesTallas, .botonesColores {margin:10px;
+                                        padding: 5px;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        }
+       .botonesTallas button, .botonesColores button{width: 40px;
+                                                     height: 40px;
+                                                     border: 1px solid black;
+                                                     margin: 0 10px;
+                                                     font-weight: bold;
+                                                     }
+       #negro{border-radius: 50px;
+              background-color: black;}
+       #marron{border-radius: 50px;
+               background-color: #641111;}
+       #gris{border-radius: 50px;
+              background-color: lightgray;}
+       #azul{border-radius: 50px;
+              background-color: #0382f8;}
+       #blanco{border-radius: 50px;
+               background-color: whitesmoke;}
+       #violeta{border-radius: 50px;
+                background-color: #9503f6;}
+       #verde{border-radius: 50px;
+              background-color: green;}
+       #rojo{border-radius: 50px;
+             background-color: red;}
+       label{width: 40px;
+             margin: 0 15px;}
+       input{width:40px;
+             height:30px;
+             margin: 0 auto 20px;
+             padding:5px 10px;
+             border: 1px solid #56001D;
+             border-radius: 10px;
+             font-size: 20px;
+             font-weight: bold;}
+       #añadir{width:100px;
+               height:40px;
+               margin: 0 0 20px 20px;
+               padding: 5px 10px;
+               background-color: green;
+               border: 1px solid #56001D;
+               border-radius: 10px;
+               color:#faf5d7;
+               font-size: 16px;
+               font-weight: bold;}
 
 
        
