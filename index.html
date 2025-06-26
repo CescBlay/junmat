@@ -7,11 +7,12 @@
     <link rel="icon" href="./assets/Nami Hanko 2025.png">     <!--Para que aparezca el logo del gato en la pestaña del navegador-->
     <meta name="author" content="Francesc Blay Costa">
     <meta name="google" content="notranslate">                 <!--para que GoogleTranslator no traduzca los textos indicados-->
-
-
-
-
-
+    <meta name="description" content="Tienda online de camisetas, sudaderas y bolsas de algodon con diseño de temas de comic japones">
+    <meta name="keywords" content="camiseta, sudadera, bolsa, algodon, tienda, comic, japon, ecologico">
+    <meta name="description" content="Botiga online de samarretes, dessuadores i bosses de coto amb disseny de tematica de comic japones">
+    <meta name="keywords" content="samarreta, dessuadora, bossa, coto, botiga, japo, ecologic">
+    <meta name="description" content="Online T-shirt shop, dessuadores and cotton tote bags whit japanese comic design">
+    <meta name="keywords" content="T-shirt, hoodie, sweatshirt, tote bag, cotton, shop, japan, organic">
 
     <!-- Font "Montserrat" importada de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +22,7 @@
     <!--Para cargar los estilos CSSde la página-->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <!--FontAwesome 5.12-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-
-        
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">      
 </head>
 <body>
     <header>
@@ -47,8 +46,7 @@
             <div class="carrito">
                 <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </div>
-        </nav>
-                
+        </nav>       
         <div class="contGran">             
             <div class="contNovetats"> 
                 <div class="nuevo">
@@ -57,24 +55,29 @@
                         stand en el Festival Matsuri. </p>
                     <div class="catNovetat">
                         <article class="novetat">
-                            <img src="./assets/images/camiseta_namichan.jpg" alt="camiseta de algodón ecológico Kimenoki"> 
+                            <a href="#" class="thumb" data-img="assets/images/camiseta_namichan.jpg"
+                                data-caption="Camiseta Namichan (波ちゃん)">
+                                <img src="assets/images/camiseta_namichan.jpg" width="200" alt="Namichan" />
+                            </a>
+                            
                             <!-- Modal -->
                             <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
                                 <div class="modal__dialog" role="document">
                                 <button class="modal__close" aria-label="Cerrar modal">&times;</button>
                                 <div class="modal__content">
+                                    <div class="modus"> 
                                     <div id="contPro">
                                         <div class="titol">
                                             <h1>Camiseta Umeko</h1>
                                         </div>     
                                         <div class="contProducte"> 
                                             <div class="contDibuix">
-                                                <img src="./assets/images/camiseta_umeko.jpg" 
+                                                <img id="modalImg" src="./assets/images/camiseta_namichan.jpg" 
                                                       alt="camiseta de algodón ecológico Umeko">
                                             </div>   
                                             <div class="contInfo">
                                                 <div class="ilustracio">
-                                                    <img src="./assets/images/Umeko Dibuix.jpg" 
+                                                    <img src="./assets/images/camiseta_namichan.jpg" 
                                                          alt="dibujo Umeko para camiseta algodon">
                                                 </div>
                                                 <div class="detalles">
@@ -106,15 +109,16 @@
                                                         <form action="">
                                                             <label for="compra">Cantidad:</label>
                                                             <input type="number" id="compra"
-                                                                pattern="[0-9]"
-                                                                value="1"                            
-                                                                required>
+                                                                pattern="[0-9]" min="1" max="25"
+                                                                value="1" required>
                                                             <input type="submit" id="añadir" value="Comprar">      
                                                         </form>
                                                     </div>
                                             </div>
                                         </div>
-                                    </div>        
+                                    </div> 
+                                    </div>       
+                                </div>
                                 </div>
                                 </div>
                             </div><br>
@@ -243,46 +247,39 @@
     <!--SCRIPT MODAL-->
     <script>
     // Elementos relevantes
-    const modal = document.getElementById("modal");
-    const thumb = document.getElementById("thumb");
-    const modalImg = document.getElementById("modalImg");
-    const contPro = document.getElementById("contPro");
-    const closeBtn = modal.querySelector(".modal__close");
+    document.addEventListener("DOMContentLoaded", () => {
+  const modal     = document.getElementById("modal");
+  const thumbs    = document.querySelectorAll(".thumb");
+  const modalImg  = document.getElementById("modalImg");
+  const caption   = document.getElementById("caption");
+  const closeBtn  = modal.querySelector(".modal__close");
 
-    // --- Abrir Modal ---
-    thumb.addEventListener("click", () => {
-      // Cargamos una versión más grande de la imagen (+ texto)
-      modalImg.src = thumb.src.replace("/300/200", "/800/600");
-      caption.textContent = thumb.alt;
-      openModal();
-    });
+  let lastThumb = null;                // ← nuevo
 
-    // --- Cerrar Modal ---
-    closeBtn.addEventListener("click", closeModal);
-
-    // Cerrar haciendo clic fuera del cuadro
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
-
-    // Cerrar con la tecla Escape
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
-    });
-
-    function openModal() {
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", e => {
+      e.preventDefault();
+      lastThumb = thumb;               // guarda quién abrió el modal
+      modalImg.src       = thumb.dataset.img;
+      if(caption)
+        caption.textContent = thumb.dataset.caption || "";
       modal.classList.add("is-open");
       modal.setAttribute("aria-hidden", "false");
-      // Gestión de foco
       closeBtn.focus();
-    }
+    });
+  });
 
-    function closeModal() {
-      modal.classList.remove("is-open");
-      modal.setAttribute("aria-hidden", "true");
-      // Devolvemos el foco a la miniatura
-      thumb.focus();
-    }
+  function closeModal() {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    if (lastThumb) lastThumb.focus();  // devuelve foco con seguridad
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+});
+
   </script>
 </body>
 </html>

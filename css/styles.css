@@ -94,7 +94,8 @@
                                             font-size: 12px;
                                             }
                                    #google_translate_element{font-size: 10px;}
-                                   .carrito{margin-left: 40px;}
+                                   .carrito{margin-left: 40px;
+                                            font-size: normal;}
                                    main{font-size: 14px;}                                                                                 
                                    }
        @media (min-width: 641px) and (max-width: 1024px){nav{margin: auto;
@@ -111,7 +112,8 @@
                                                                  border-radius: 10px;
                                                                  font-size: 12px;
                                                                  }
-                                                        .carrito{margin-left: 80px;}
+                                                        .carrito{margin-left: 80px;
+                                                                 font-size: normal;}
                                                         main{font-size: 16px;}     
                                                         }
        
@@ -352,11 +354,14 @@
                 border-radius: 15px;
                 background-size: cover;
                 }
+       .totebag:hover{background-color:#97f5f5;
+                      color: black;}
        .totebagImag{width: 240px;                    
                      height: 340px;
                      margin: 0 0 20px;
                      border-radius: 15px;
                      }
+       .totebag img:hover{transform:scale(1.1);} 
 
        .botiga{width: 90%;
                min-height: 150px;
@@ -787,62 +792,84 @@
                                                         }       
 
        /*ESPECÍFICO PÁGINA DE PRODUCTO*/
-       .contPro{width: 100%;
+       .modus{width: 74%;
+              min-height: 50em;
+              margin: 10px auto;
+              padding: 5px 10px;
+              border-radius: 30px;
+              background: #faf5d7;
+              color: #56001D;
+              text-align: center;
+              }
+       .contPro{width: 72vw;
+                min-height: 50em;
                 margin:0;
                 padding: 0;
                 background-color: #faf5d7;
                 text-align: center;
-                color:#56001D
+                color:#56001D;
+                border-radius: 20px;
                  }
-       .titol{width: 98vw;
-              height: 10vh;
+       .titol{width: 70vw;
+              height: 8vh;
+              background-color: #faf5d7;
               margin: 0 auto;
               padding: 0;
               }
-       .titol h1{margin:5px;
+       .titol h1{margin:0;
                  padding: 0;
                  text-align: center;
-                 font-size: 60px;
+                 font-size: 50px;
                  }        
-       .contProducte{width: 98vw;
-                     margin: 5px auto;
+       .contProducte{width: 70vw;
+                     margin: auto;
                      display: inline-flex;
                      flex-wrap: wrap;
-                     gap: 15px;
+                     gap: 5px;
                      justify-content:space-between;
+                     background-color: #faf5d7;
                      border: 2px solid #56001D;
                      border-radius: 20px;
                      }
-       .contDibuix{width: 35vw;
-                   margin:10px auto;
+       .contDibuix{width: 20vw;
+                   margin:100px auto 0;
+                   display: block;
+                   justify-content: center;
                    text-align: center;
+                   align-items: center;
                    }
-       .contDibuix img{width: 30vw;
-                       margin:5px auto;
+       .modalImg{width: 20vw;
+                margin: 0 auto;
+                text-align: center;
+                border-radius: 15px;
+                background-size: cover;
+                }
+       .contDibuix img{width: 20vw;
+                       margin: 0 auto;
                        text-align: center;
                        border-radius: 15px;
                        background-size: cover;
                        }
-       .contInfo{width: 55vw;
+       .contInfo{width: 45vw;
                  margin: 10px auto;
                  box-sizing: content-box;
-                 /*border: 1px solid black;
-                 border-radius: 20px;*/
+                 /*border: 1px solid black;*/
+                 border-radius: 20px;
                  text-align: justify;
                  } 
-       .ilustracio{width: 50vw;              
-                   margin: 5px auto;
+       .ilustracio{width: 40vw;              
+                   margin: 5px auto 0;
                    text-align: center;
-                   /*border: 1px solid black;
-                   border-radius: 15px;*/
+                   /*border: 1px solid black;*/
+                   border-radius: 15px;
                    } 
-       .ilustracio img{width: 20vw;
-                       margin:5px auto;
+       .ilustracio img{width: 14vw;
+                       margin:5px auto 0;
                        text-align: center;
                        border-radius: 15px;
                        background-size: cover;
                       }                               
-       .detalles{width: 50vw;
+       .detalles{width: 40vw;
                  margin: 5px auto;
                  padding: 5px 20px;
                  /*border: 2px solid black;*/
@@ -937,6 +964,8 @@
     }
     /* Modal base (overlay) */
     .modal {
+      width: 80%;
+      height: 90%;
       position: fixed;
       inset: 0;
       display: flex;
@@ -947,7 +976,7 @@
       visibility: hidden;
       transition: opacity var(--speed) ease;
       z-index: 999;
-    }
+       }
 
     /* Estado visible */
     .modal.is-open {
@@ -973,7 +1002,7 @@
     }
 
     /* Contenido */
-   /*ESPECÍFICO PÁGINA DE PRODUCTO*/
+   /*ESPECÍFICO PÁGINA DE PRODUCTO
        .contPro{width: 80%;
                 margin:0;
                 padding: 0;
@@ -1014,14 +1043,14 @@
                  margin: 10px auto;
                  box-sizing: content-box;
                  /*border: 1px solid black;
-                 border-radius: 20px;*/
+                 border-radius: 20px;*
                  text-align: justify;
                  } 
        .ilustracio{width: 50vw;              
                    margin: 5px auto;
                    text-align: center;
                    /*border: 1px solid black;
-                   border-radius: 15px;*/
+                   border-radius: 15px;*
                    } 
        .ilustracio img{width: 20vw;
                        margin:5px auto;
@@ -1032,7 +1061,7 @@
        .detalles{width: 50vw;
                  margin: 5px auto;
                  padding: 5px 20px;
-                 /*border: 2px solid black;*/
+                 /*border: 2px solid black;
                  text-align: justify;
                  color:#56001D;
                  }
@@ -1087,7 +1116,7 @@
                border-radius: 10px;
                color:#faf5d7;
                font-size: 16px;
-               font-weight: bold;}
+               font-weight: bold;}*/
 
 
        
@@ -1118,220 +1147,4 @@
 
 
 
-
-
-
-      /*ESPECÍFICO PÁGINA DE NUEVO CLIENTE
-      /*<div class="cliente"> es el mismo formato que <div class="clinica">
-      .cliente h1{text-align: center;
-                  margin-top: 20px;
-                  padding: 0;
-                  color: #7a3b3b;
-                 }
-      .cliente form{max-width: 900px;
-                    min-height: 400px;
-                    margin: 0 auto 30px;
-                    padding: 20px;
-                    display: block;
-                    justify-content: space-between;
-                    border: 2px solid green;
-                    border-radius: 25px;
-                    background-color: #f9f4ea;
-                   }
-      .cliente fieldset{border: 1px solid #7a3b3b;
-                        border-radius: 15px;
-                        margin-bottom: 10px;
-                        padding: 15px;
-                       } 
-      .cliente legend{font-weight: bold;
-                      color:#7a3b3b;
-                      padding: 5px 10px;
-                      }             
-      .cliente label{width: 100px;
-                     display:inline-block;
-                     margin-left: 20px;
-                     font-weight: 400;
-                     }
-      .cliente input{width: 260px;
-                     min-height: 20px;
-                     margin:10px 5px;
-                     padding: 5px;
-                     display: inline-block;
-                     border: 1px solid grey;
-                     border-radius: 10px;
-                     font-size: 16px;
-                     }
-      .mascotas select{width: 200px;
-                       height: 30px;
-                       text-align: center;
-                       }
-      button{margin: 10px 20px;
-              width: 150px;
-              padding: 10px;
-              display:inline;
-              justify-content:space-between;
-              text-align: center;
-              border-radius: 25px;
-              font-size: large;
-              font-weight: bold;
-              }
-      .boto1{background-color: #dcdc04;
-             border: 1px solid #dcdc04;
-             color:indigo;
-             box-shadow: 5px 5px 10px #b05959;
-             }
-      .boto1:hover{background-color: #f6f697;
-                   border: 1px solid #f6f697;
-                   color: #cd5ccd;
-                  }
-      .boto2{background-color: green;
-             border: 1px solid green;
-             color:antiquewhite;
-             box-shadow: 5px 5px 10px #b05959;
-             }
-      .boto2:hover{background-color: #b8f572;
-                   border: 1px solid #b8f572;
-                   color: black;
-              }                         
-       [type="radio"]{margin: 10px 0 20px 0 !important;
-                      width: 20px !important;
-                     }
-       .amoverif{margin-left: 150px !important;}             
-       [type="checkbox"]{margin: 10px 0 20px 10px !important;
-                         width: 20px !important;
-                        }
-       .sinto{margin-bottom: 10px;}                 
-       #sinto{width: 95%;
-              min-height: 100px;
-              margin-left: 20px;
-              font-size: 14px;
-              resize: none;
-             }          
-       .centrar{text-align: center;
-                margin:auto;}
-
-       /*ESPECÍFICO PÁGINA LISTADO*/
-       /*<div id="listado"> es el mismo formato que <div class="clinica">
-       #listCli{margin: auto;
-                padding: 10px 50px;
-                border: 2px solid #b05959;
-                border-radius: 20px;
-                background-color: #dff6df;
-                } 
-       #listado{display: flex;
-                flex-wrap: wrap;}
-       #fichaCli{width: 350px;
-                 min-height: 450px;
-                 margin: 20px;
-                 padding: 20px 5px 5px;
-                 border: 2px solid green;
-                 border-radius: 15px;
-                 text-align: center;
-                 background-color: #f9f4ea;
-                 color:#7a3b3b;
-                 word-wrap: break-word;
-                 overflow-wrap: break-word;
-                 }
-       #fichaCli p{margin: 0;
-                   padding: 0;}
-       #fichaCli hr{width: 250px;
-                    border-color: #7a3b3b;}
-       #borrarCli{border: 1px solid red;
-                   background-color: red;
-                   box-shadow: 5px 5px 10px #b05959;
-                  }
-       #borrarCli:hover{background-color: #f78383;
-                        border-color: #f78383;}*/
-
-              
-       /*ESPECÍFICO PÁGINA POLÍTICAS*/
-       /*<div class="politicas"> es el mismo formato que <div class="clinica">
-       .politicas h1, h2{text-align: center;
-                          color:#7a3b3b;
-                          padding: 5px;
-                          margin: 0;}
-      .politicas h1{margin-top: 20px;}
-      .politicas h2{margin-bottom: 20px;}                    
-      .legal{width: 80%;
-             min-height: 700px;
-             margin:0 auto 50px;
-             padding: 20px 50px;
-             background-color:#f7dede;
-             color:black;
-             border: 2px solid #0e310e;
-             border-radius: 20px;
-             }
-      .legal p{padding: 0 25px;}
-
-      /*ESPECÍFICO PÁGINA CONTACTO
-       <div class="politicas"> es el mismo formato que <div class="clinica">
-       .contactar h1{text-align: center;
-                     margin-top: 20px;
-                     padding: 0;
-                     color: #7a3b3b
-                    }
-       .cajaform{width: 50%;
-                 min-height: 370px;
-                 margin: 0 auto;
-                 display: block;
-                 background-color: #f9f4ea;
-                 border: 2px solid green;
-                 border-radius: 15px;
-                 }
-       #info{min-height: 300px;
-              margin: 20px auto;
-              text-align: center;
-              font-size: 16px;
-              }
-       #info label{margin-right:15px;}
-       #info input{width: 300px;
-                        height: 15px;
-                        margin: 5px auto;
-                        padding: 5px;
-                        border: 1px solid grey;
-                        border-radius: 10px;
-                        font-size: 14px;
-                        }
-       .soli{margin-top: 20px;}
-       #motivo{width: 70%;
-              min-height: 70px;
-              margin: 10px 0 0 20px;
-              font-size: 14px;
-              resize: none;
-             }          
-       .condi{font-size: 14px;
-              margin-right: 0 !important;}                 
-       .polis{margin-left: 30px;
-              font-size: 14px;}                          
-       #info [type="submit"]{margin: 10px auto 10px;
-                            width: 150px;
-                            height: 50px;
-                            padding: 10px;
-                            border-radius: 25px;
-                            background-color: green;
-                            color:antiquewhite;
-                            font-size: large;
-                            font-weight: bold;
-                            box-shadow: 5px 5px 10px #b05959;
-                            }
-       .cajadir{width: 400px;
-                height: 150px;
-                margin: 0 auto;
-                padding: 5px;
-                background-color: #d2d0d0;
-                border: 2px solid #565555;
-                border-radius: 20px;
-               }
-       .contactar img{width: 60%;
-                      max-height: 300px;
-                      display: flex;
-                      margin: 10px auto;
-                      border-radius: 15px;
-                      resize:both;
-                     }*/
-     
-      
-      
-
-       
 

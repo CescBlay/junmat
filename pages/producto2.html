@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudadera Maiko algodon ecologico.</title>
+    <title>Sudadera Maiko algodon.</title>
     <link rel="icon" href="./assets/Nami Hanko 2025.png">     <!--Para que aparezca el logo del gato en la pestaña del navegador-->
     <meta name="author" content="Francesc Blay Costa">
     <meta name="google" content="notranslate">                 <!--para que GoogleTranslator no traduzca los textos indicados-->
+    <meta name="description" content="Tienda online de camisetas, sudaderas y bolsas de algodon con diseño de temas de comic japones">
+    <meta name="keywords" content="camiseta, sudadera, bolsa, algodon, tienda, comic, japon, ecologico">
+    <meta name="description" content="Botiga online de samarretes, dessuadores i bosses de coto amb disseny de tematica de comic japones">
+    <meta name="keywords" content="samarreta, dessuadora, bossa, coto, botiga, japo, ecologic">
+    <meta name="description" content="Online T-shirt shop, dessuadores and cotton tote bags whit japanese comic design">
+    <meta name="keywords" content="T-shirt, hoodie, sweatshirt, tote bag, cotton, shop, japan, organic">
 
     <!-- Font "Montserrat" importada de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +23,10 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <!--FontAwesome 5.12-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-  
 </head>
+
 <body>
+    <div class="modus"> 
     <div class="contPro">
         <div class="titol">
             <h1>Sudadera Skate Maiko</h1>
@@ -55,21 +62,21 @@
                         <button id="rojo"></button>
                     </div>   
                     <p>Precio: 35 €</p>
-                    <p>Sudadera de algodón ecológico de color violeta con el dibujo de una geisha en skate.</p>
+                    <p>Sudadera de algodón de color violeta con el dibujo de una geisha en skate.</p>
                <div class="cantidad">
                 <form action="">
-                    <label for="compra">Cantidad:</label>
-                    <input type="number" id="compra"
-                           pattern="[0-9]"
-                           value="1"                            
-                           required>
-                    <input type="submit" id="añadir" value="Comprar">      
-                </form>
+                            <label for="compra">Cantidad:</label>
+                            <input type="number" id="compra"
+                                pattern="[0-9]" min="1" max="25"
+                                value="1" required>
+                            <input type="submit" id="añadir" value="Comprar">      
+                        </form>
                </div>
                
                 </div>
             </div>
         </div>
+    </div>
     </div>        
 </body>
 </html>
